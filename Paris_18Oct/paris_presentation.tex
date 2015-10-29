@@ -71,9 +71,10 @@ The flow diagram about the steps
 			\end{itemize}
 		\item[Method:]
 		\begin{itemize}
-			\item Choose an arbitrary point in model (reference point)
-			\item Recording the perpendicular and angle from reference point to each pair model lines (save into reference table)
-			\item For each pair scene lines ``\textit{similar}" with pair of model lines, voting in accumulator (corresponding distance and angle)
+			\item Construct the reference table
+			\item Find the pair scene lines have the best ``vote"
+			\item Estimate the ``reference point" in scene image
+			\item Estimate the landmarks
 		\end{itemize}
 	\end{description}
 \end{frame}

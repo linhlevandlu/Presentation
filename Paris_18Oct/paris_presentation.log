@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.23)  29 OCT 2015 15:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.23)  29 OCT 2015 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -991,15 +991,15 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 \tf@snm=\write8
 \openout8 = `paris_presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
 
 (./paris_presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `paris_presentation.out' has not changed.
 (rerunfilecheck)             Checksum: AC9AA6641FA7056D40F9AC7C56C599F4;508.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
  18227 strings out of 493304
@@ -1012,7 +1012,7 @@ Here is how much of TeX's memory you used:
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on paris_presentation.pdf (12 pages, 40686 bytes).
+Output written on paris_presentation.pdf (12 pages, 40939 bytes).
 PDF statistics:
  413 PDF objects out of 1000 (max. 8388607)
  380 compressed objects within 4 object streams
