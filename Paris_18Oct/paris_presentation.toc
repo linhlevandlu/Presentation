@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Method}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Segmentation}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Pairwise geometric histogram(PGH)}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Probabilistic Hough Transform}{8}{0}{2}
+\beamer@subsectionintoc {2}{4}{Template matching}{9}{0}{2}
+\beamer@sectionintoc {3}{Result}{10}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{11}{0}{4}
+\beamer@sectionintoc {5}{References}{12}{0}{5}

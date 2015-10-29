@@ -1,0 +1,96 @@
+\documentclass{beamer}
+\usepackage{pgfpages}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{tikz}
+\usetheme{Warsaw}
+\setbeamercovered{transparent}
+%\usecolortheme{seahorse}
+\useoutertheme{infolines}
+\setbeamertemplate{footline} [frame number]
+\title{Automatic identification of landmarks by shape recognize}
+\author{LE Van Linh}
+%\institute{LaBRI laboratory}
+\date{Oct 29, 2015}
+\begin{document}
+\frame{\titlepage}
+\begin{frame}{Contents}
+	\tableofcontents
+\end{frame}
+\section{Introduction}
+\begin{frame}{Introduction}
+Introduction about presentation
+\end{frame}
+\begin{frame}{Introduction}
+The flow diagram about the steps
+\end{frame}
+\section{Method}
+\subsection{Segmentation}
+\begin{frame}{Segmentation}
+	Purpose: 
+	\begin{itemize}
+		\item Extract the features (edge) from images
+		\item Get the approximate lines
+	\end{itemize}
+	Method:
+	\begin{itemize}
+		\item Indicate the threshold value by analysis histogram of image		
+		\item Canny
+		\item Break edge algorithm
+	\end{itemize}
+	Result: The set of approximate lines
+\end{frame}
+\subsection{Pairwise geometric histogram(PGH)}
+\begin{frame}{Pairwise geometric histogram}
+	\begin{description}
+		\item[Purpose:] detecting the present of scene image in model image
+		\item[Method:]
+		\begin{itemize}
+			\item Construct the local PGH
+			\item Construct the shape PGH
+			\item Matching shape's PGH by Bhattacharyya metric
+		\end{itemize}
+	\end{description}
+\end{frame}
+\begin{frame}{Pairwise geometric histogram}
+	\framesubtitle{Local PGH and shape PGH}
+	\begin{description}
+		\item[PGH:] a matrix two dimensions: angle axis and distance axis
+		\item[PGH information:] angle between two lines and perpendicular distance from two endpoints of scene line to reference line.
+		\item[Local PGH]: PGH for each feature (line)
+		\item[Shape PGH]: contains many \textbf{Local PGH}
+	\end{description}
+\end{frame}
+\subsection{Probabilistic Hough Transform}
+\begin{frame}{Probabilistic Hough Transform}
+	\begin{description}
+		\item[Purpose:]
+			\begin{itemize}
+				\item Determine the presence and location of model image in scene image
+				\item Estimate the landmarks in the scene image
+			\end{itemize}
+		\item[Method:]
+		\begin{itemize}
+			\item Choose an arbitrary point in model (reference point)
+			\item Recording the perpendicular and angle from reference point to each pair model lines (save into reference table)
+			\item For each pair scene lines ``\textit{similar}" with pair of model lines, voting in accumulator (corresponding distance and angle)
+		\end{itemize}
+	\end{description}
+\end{frame}
+\subsection{Template matching}
+\begin{frame}{Template matching}
+	This slide talk about the PHT method
+\end{frame}
+\section{Result}
+\begin{frame}{Result}
+	This slide talk about the result
+\end{frame}
+\section{Conclusion}
+\begin{frame}{Conclusion}
+	This slide talk about conclusion
+\end{frame}
+\section{References}
+\begin{frame}{References}
+	References slide
+\end{frame}
+\end{document}
