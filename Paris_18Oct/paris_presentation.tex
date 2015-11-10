@@ -9,13 +9,11 @@
 \setbeamertemplate{footline} [frame number]
 \title{Automatic identification of landmarks by shape recognition}
 %\author{LE Van Linh}
-<<<<<<< HEAD
+
 
 \date{Oct 29, 2015}
-=======
 %\institute{LaBRI laboratory}
 \date{\today}
->>>>>>> 3a74f3884c9b984ff6b816654ee1c30026afb51d
 \begin{document}
 \frame{\titlepage}
 \begin{frame}{Contents}
@@ -28,13 +26,23 @@
 		\item Indicate the landmarks:
 			\begin{itemize}
 				\item By hands
-				\item Automatically
-			\end{itemize}			  
+				\item Automatically: implement from the article \textit{Automatic identification of landmarks in digital images$^{\cite{palaniswamy}}$}
+			\end{itemize}			
+		\item The method was examation on two sets of MorphoSpecie image: \textit{mandibule droite} and \textit{mandibule gauche}  
 	\end{itemize}
 \end{frame}
 \begin{frame}{Introduction}
-	The propose method$^{\cite{palaniswamy}}$ includes four steps:
+	\begin{columns}[c]
+		\column{0.5\textwidth}
+		\includegraphics[height=4.5cm]{images/model28.JPG}
+		\column{0.5\textwidth}
+		\includegraphics[height=4.5cm]{images/modelmg37.JPG}
+	\end{columns}
+\end{frame}
+\begin{frame}{Introduction}
+	The propose method$^{\cite{palaniswamy}}$ by Palaniswamy includes four steps:
 	\includegraphics[height=3.5cm]{images/flow.png}
+	Edge segmentation         PGH             PHT       Matching
 \end{frame}
 \section{Method}
 \subsection{Segmentation}
