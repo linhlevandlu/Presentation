@@ -9,7 +9,7 @@
 \useoutertheme{infolines}
 \setbeamertemplate{footline} [frame number]
 \title{Automatic identification of landmarks by shape recognition}
-\author{LE Van Linh}
+%\author{LE Van Linh}
 %\institute{LaBRI laboratory}
 \date{\today}
 \begin{document}
@@ -18,23 +18,24 @@
 	\tableofcontents
 \end{frame}
 \section{Introduction}
+%\begin{frame}{Introduction}
+%	\begin{itemize}
+%		\item Implementation of article \textit{``Automatic identification of landmarks in digital images" $^{\cite{palaniswamy}}$ }
+%		\item Examination based on two set of images: \textit{mandibule droite} and \textit{mandibule gauche} 		  
+%	\end{itemize}
+%\end{frame}
 \begin{frame}{Introduction}
 	\begin{itemize}
-		\item Shape analysis by landmarks is increasingly used in biological and medical applications.
-		\item Indicate the landmarks:
-			\begin{itemize}
-				\item By hands
-				\item Automatically
-			\end{itemize}			  
+	\item The implementation based on \textbf{"Automatic identification of landmarks in digital images"}, \textit{Palaniswamy, Sasirekha, Neil A. Thacker, and Christian Peter Klingenberg} \\
+	\item It includes four steps:
+		\begin{center}
+			\includegraphics[height=3.5cm]{images/flow_step.png}	
+		\end{center}
 	\end{itemize}
 \end{frame}
-\begin{frame}{Introduction}
-	The propose method$^{\cite{palaniswamy}}$ includes four steps:
-	\includegraphics[height=3.5cm]{images/flow.png}
-\end{frame}
 \section{Method}
-\subsection{Segmentation}
-\begin{frame}{Segmentation}
+%\subsection{Segmentation}
+\begin{frame}{Method - Edge segmentation}
 	Purpose: 
 	\begin{itemize}
 		\item Extract the features (edge) from images
@@ -46,10 +47,23 @@
 		\item Canny
 		\item Break edge algorithm
 	\end{itemize}
-	Result: The set of approximate lines
+	Parameters:
+	\begin{itemize}
+		\item Threshold value: indicated by histogram analysis
+		\item Canny ratio: 1:3 (lower:upper)
+		\item Minimum distance to stop break edge: 3 pixels
+	\end{itemize}
 \end{frame}
-\subsection{Pairwise geometric histogram(PGH)}
-\begin{frame}{Pairwise geometric histogram}
+\begin{frame}{Method - Edge segmentation}
+	\begin{columns}[c]
+		\column{0.5\textwidth}
+		\includegraphics[height=4.5cm]{images/model28.JPG}
+		\column{0.5\textwidth}
+		\includegraphics[height=4.5cm]{images/edge28.jpg}
+	\end{columns}
+\end{frame}
+%\subsection{Pairwise geometric histogram(PGH)}
+\begin{frame}{Method - Pairwise geometric histogram}
 	\begin{description}
 		\item[Purpose:] detecting the present of scene image in model image
 		\item[Method$^{\cite{pgh}}$:]
@@ -58,9 +72,14 @@
 			\item Construct the shape PGH
 			\item Matching shape's PGH by Bhattacharyya metric
 		\end{itemize}
+		\item[Parameters]: to construct the PGH matrix (used to compute the metric)
+			\begin{itemize}
+				\item Angle accuracy: 90, 180, 360, 720
+				\item Distance accuracy: 250, 500, 1000
+			\end{itemize}
 	\end{description}
 \end{frame}
-\begin{frame}{Pairwise geometric histogram}
+\begin{frame}{Method - Pairwise geometric histogram}
 	\framesubtitle{Local PGH and shape PGH}
 	\begin{description}
 		\item[Local PGH]: PGH for each feature (line)
@@ -69,8 +88,8 @@
 		\item[PGH information]: angle between two lines and perpendicular distance from two endpoints of scene line to reference line.
 	\end{description}
 \end{frame}
-\subsection{Probabilistic Hough Transform}
-\begin{frame}{Probabilistic Hough Transform}
+%\subsection{Probabilistic Hough Transform}
+\begin{frame}{Method - Probabilistic Hough Transform}
 	\begin{description}
 		\item[Purpose:]
 			\begin{itemize}
@@ -87,16 +106,29 @@
 		\item[Result:] Estimated model landmarks on scene image
 	\end{description}
 \end{frame}
-\begin{frame}{Probabilistic Hough Transform}
-	\begin{columns}[c]
-		\column{0.5\textwidth}
-		\includegraphics[height=4.5cm]{images/model28.JPG}
-		\column{0.5\textwidth}
-		\includegraphics[height=4.5cm]{images/pht32.JPG}
-	\end{columns}
+\begin{frame}{Method - PHT Parameters}
+	\begin{itemize}
+		\item Closet lines
+			\begin{itemize}
+				\item Minimum length of each line: 60 pixels
+				\item Minimum angle between two lines: 15 degrees
+				\item Distance from an endpoint of a line to another line: 5 pixels
+			\end{itemize}
+		\item Similar pairs		
+			\begin{itemize}
+				\item Maximum difference angle: 1 degree
+				\item Maximum difference scale: 1 pixel
+				\item Maximum difference position: 2 pixels
+			\end{itemize}
+	\end{itemize}
 \end{frame}
-\subsection{Template matching}
-\begin{frame}{Template matching}
+\begin{frame}{Method - Probabilistic Hough Transform}
+	\begin{center}
+		\includegraphics[height=8cm]{images/pht19.JPG}	
+	\end{center}
+\end{frame}
+%\subsection{Template matching}
+\begin{frame}{Method - Template matching}
 	\begin{description}
 		\item [Purpose:] Refine the estimated landmarks on the scene image 
 		\item [Method:] 
@@ -106,21 +138,24 @@
 				\item On scene image: For each estimated landmark, create a bounding box with size ``\textit{t2}" and \textit{landmark} is center point of box
 				\item Sliding \textit{t1} on \textit{t2} and find the the best match (cross-correlation)
 			\end{itemize}
+		\item [Parameters:]
+			\begin{itemize}
+				\item Template box size: 400px
+				\item Image box size: 1400px
+			\end{itemize}
 	\end{description}
 \end{frame}
-\begin{frame}{Template matching}
-	\begin{columns}[c]
-		\column{0.5\textwidth}
-		\includegraphics[height=4.5cm]{images/est28.JPG}
-		\column{0.5\textwidth}
-		\includegraphics[height=4.5cm]{images/est32.JPG}
-	\end{columns}
+\begin{frame}{Method - Template matching}
+	\begin{center}
+		\includegraphics[height=8cm]{images/est19.JPG}	
+	\end{center}
 \end{frame}
 \section{Result}
 \begin{frame}{Result}
 	\begin{itemize}
 		\item Dataset: \textit{Mandibule droite} and \textit{mandibule gauche}
-		\item Method can be estimated landmarks but the accuracy of the landmarks (compare with original landmarks) is not good.
+		\item Method includes 4 steps. The result of each step can effect to next step.
+		\item This method can be used to identify the landmarks. But, in some cases, the estimated landmarks are not close with manual landmarks.
 	\end{itemize}
 \end{frame}
 \section{References}
