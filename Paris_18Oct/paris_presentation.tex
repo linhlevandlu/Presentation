@@ -95,7 +95,7 @@
 			\item Estimate the ``reference point" in scene image
 			\item Estimate the landmarks
 		\end{itemize}
-		\item[Result:] Estimated model landmarks on scene image
+		%\item[Result:] Estimated model landmarks on scene image
 	\end{description}
 \end{frame}
 \begin{frame}{Method - PHT parameters (Building the reference table)}
@@ -145,15 +145,15 @@
 		\item [Purpose:] Refine the estimated landmarks on the scene image 
 		\item [Method:] 
 			\begin{itemize}
-				\item On model image: For each landmark, create a bounding box with size ``\textit{t1}" and \textit{landmark} is center point of box
+				\item On model image: \texttt{For each landmark, create a bounding box with size "\textit{templSize}" and \textit{landmark} is center point of box}
 				\item Rotate scene image to match with model
-				\item On scene image: For each estimated landmark, create a bounding box with size ``\textit{t2}" and \textit{landmark} is center point of box
-				\item Sliding \textit{t1} on \textit{t2} and find the the best match (cross-correlation)
+				\item On scene image: \texttt{For each estimated landmark, create a bounding box with size "\textit{imageSize}" and \textit{landmark} is center point of box}
+				\item \texttt{Sliding \textit{t1} on \textit{t2} and find the the best match (cross-correlation)}
 			\end{itemize}
 		\item [Parameters:]
 			\begin{itemize}
-				\item Template box size: 400px (\textbf{EstTemplSize})
-				\item Image box size: 1400px (\textbf{EstImageSize})
+				\item Template box size: 400px (\textbf{templSize})
+				\item Image box size: 1400px (\textbf{imageSize})
 			\end{itemize}
 	\end{description}
 \end{frame}
