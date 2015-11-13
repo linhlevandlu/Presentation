@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.29)  11 NOV 2015 21:18
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.29)  13 NOV 2015 11:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1167,92 +1167,103 @@ LaTeX Info: Redefining \includegraphics on input line 15.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./paris_presentation.toc) [2
-
-]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 35.
 
-<images/flow_step.png, id=103, 605.26125pt x 257.96375pt>
+<images/flow_step.png, id=62, 605.26125pt x 257.96375pt>
 File: images/flow_step.png Graphic file (type png)
 
 <use images/flow_step.png>
 Package pdftex.def Info: images/flow_step.png used on input line 35.
 (pdftex.def)             Requested size: 233.64969pt x 99.58464pt.
- [3
+ [2
 
- <./images/flow_step.png>] [4
-
-]
-<images/model28.JPG, id=160, 1310.496pt x 982.872pt>
-File: images/model28.JPG Graphic file (type jpg)
- <use images/model28.JPG>
-Package pdftex.def Info: images/model28.JPG used on input line 64.
-(pdftex.def)             Requested size: 170.7104pt x 128.0374pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+ <./images/flow_step.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 64.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 56.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 64.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 56.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 56.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 56.
+ [3
 
-<images/edge28.jpg, id=161, 2457.18pt x 1842.885pt>
+]
+<images/model28.JPG, id=123, 1310.496pt x 982.872pt>
+File: images/model28.JPG Graphic file (type jpg)
+ <use images/model28.JPG>
+Package pdftex.def Info: images/model28.JPG used on input line 64.
+(pdftex.def)             Requested size: 170.7104pt x 128.0374pt.
+
+<images/edge28.jpg, id=124, 2457.18pt x 1842.885pt>
 File: images/edge28.jpg Graphic file (type jpg)
  <use images/edge28.jpg>
 Package pdftex.def Info: images/edge28.jpg used on input line 64.
 (pdftex.def)             Requested size: 170.7079pt x 128.0374pt.
 
-[5
+[4
 
- <./images/model28.JPG> <./images/edge28.jpg>] [6
+ <./images/model28.JPG> <./images/edge28.jpg>] [5
 
-] [7
+] [6
+
+]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 119.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 119.
+ [7
 
 ] [8
 
-] [9
-
 ]
-<images/pht19.JPG, id=299, 2457.18pt x 1842.885pt>
+<images/pht19.JPG, id=260, 2457.18pt x 1842.885pt>
 File: images/pht19.JPG Graphic file (type jpg)
  <use images/pht19.JPG>
-Package pdftex.def Info: images/pht19.JPG used on input line 129.
+Package pdftex.def Info: images/pht19.JPG used on input line 141.
 (pdftex.def)             Requested size: 303.47238pt x 227.62204pt.
 
-Overfull \vbox (13.30814pt too high) detected at line 129
+Overfull \vbox (13.30814pt too high) detected at line 141
  []
 
-[10
+[9
 
- <./images/pht19.JPG>] [11
+ <./images/pht19.JPG>] [10
 
 ]
-<images/est19.JPG, id=351, 2457.18pt x 1842.885pt>
+<images/est19.JPG, id=312, 2457.18pt x 1842.885pt>
 File: images/est19.JPG Graphic file (type jpg)
  <use images/est19.JPG>
-Package pdftex.def Info: images/est19.JPG used on input line 152.
+Package pdftex.def Info: images/est19.JPG used on input line 164.
 (pdftex.def)             Requested size: 303.47238pt x 227.62204pt.
 
-Overfull \vbox (13.30814pt too high) detected at line 152
+Overfull \vbox (13.30814pt too high) detected at line 164
  []
 
-[12
+[11
 
- <./images/est19.JPG>] [13
+ <./images/est19.JPG>] [12
+
+] [13
 
 ] [14
-
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>] [15
 
 ]
 \tf@nav=\write6
@@ -1264,32 +1275,33 @@ Overfull \vbox (13.30814pt too high) detected at line 152
 \tf@snm=\write8
 \openout8 = `paris_presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (./paris_presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `paris_presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 2AD2B3F54AB41CB48D3646DCE1184710;174.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
+(rerunfilecheck)             Checksum: 02D82D11D3701FC3C8F0DD1CDEE5E155;129.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 18545 strings out of 495028
- 352958 string characters out of 6181496
- 424401 words of memory out of 5000000
- 21246 multiletter control sequences out of 15000+600000
- 26376 words of font info for 54 fonts, out of 8000000 for 9000
+ 18544 strings out of 495028
+ 351677 string characters out of 6181496
+ 425353 words of memory out of 5000000
+ 21238 multiletter control sequences out of 15000+600000
+ 33064 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,17n,60p,428b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,17n,59p,428b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/he
-lvetic/uhvro8a.pfb>
-Output written on paris_presentation.pdf (15 pages, 2640542 bytes).
+e/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
+uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+
+Output written on paris_presentation.pdf (14 pages, 2650462 bytes).
 PDF statistics:
- 486 PDF objects out of 1000 (max. 8388607)
- 438 compressed objects within 5 object streams
- 36 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 445 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
