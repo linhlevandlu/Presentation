@@ -1,0 +1,60 @@
+\beamer@endinputifotherversion {3.24pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {0}{0}{3}{3/4}{}{0}}
+\headcommand {\beamer@framepages {3}{4}}
+\headcommand {\slideentry {0}{0}{4}{5/5}{}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\sectionentry {1}{Introduction}{6}{Introduction: {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ overview about the method}}{0}}
+\headcommand {\beamer@sectionpages {1}{5}}
+\headcommand {\beamer@subsectionpages {1}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{6}{Overview about the method}}\headcommand {\beamer@subsectionpages {6}{5}}
+\headcommand {\slideentry {1}{1}{1}{6/6}{Overview about the method}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\sectionentry {2}{Method}{7}{Method: {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ segmentation, registration, SIFT descriptor of patches}}{0}}
+\headcommand {\beamer@sectionpages {6}{6}}
+\headcommand {\beamer@subsectionpages {6}{6}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{7}{Method steps in detail}}\headcommand {\beamer@subsectionpages {7}{6}}
+\headcommand {\slideentry {2}{1}{1}{7/8}{Method steps in detail}{0}}
+\headcommand {\beamer@framepages {7}{8}}
+\headcommand {\slideentry {2}{1}{2}{9/10}{Method steps in detail}{0}}
+\headcommand {\beamer@framepages {9}{10}}
+\headcommand {\slideentry {2}{1}{3}{11/11}{Method steps in detail}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{1}{4}{12/12}{Method steps in detail}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\sectionentry {3}{Result}{13}{Result: {\relax \fontsize {10.95}{13.6}\selectfont \abovedisplayskip 11\p@ plus3\p@ minus6\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6.5\p@ plus3.5\p@ minus3\p@ \belowdisplayskip \abovedisplayskip \let \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ final result and evaluation}}{0}}
+\headcommand {\beamer@sectionpages {7}{12}}
+\headcommand {\beamer@subsectionpages {7}{12}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{13}{Result}}\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\slideentry {3}{1}{1}{13/13}{Result}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {3}{1}{2}{14/14}{Result}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {3}{1}{3}{15/15}{Result}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {3}{1}{4}{16/16}{Result}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\sectionentry {4}{Conclusion and future works}{17}{Conclusion and future works}{0}}
+\headcommand {\beamer@sectionpages {13}{16}}
+\headcommand {\beamer@subsectionpages {13}{16}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{17}{Conclusion}}\headcommand {\beamer@subsectionpages {17}{16}}
+\headcommand {\slideentry {4}{1}{1}{17/17}{Conclusion}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {4}{1}{2}{18/18}{Conclusion}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {4}{1}{3}{19/19}{Conclusion}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {4}{1}{4}{20/20}{Conclusion}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {4}{1}{5}{21/21}{Conclusion}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {4}{1}{6}{22/22}{Conclusion}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {17}{22}}
+\headcommand {\beamer@sectionpages {17}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\def \inserttotalframenumber {19}}
