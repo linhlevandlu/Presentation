@@ -1,4 +1,5 @@
 \beamer@endinputifotherversion {3.24pt}
+<<<<<<< HEAD
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Method}{6}{0}{2}
 \beamer@subsectionintoc {2}{1}{Segmentation}{6}{0}{2}
@@ -7,3 +8,8 @@
 \beamer@subsectionintoc {2}{4}{Template matching}{11}{0}{2}
 \beamer@sectionintoc {3}{Result}{13}{0}{3}
 \beamer@sectionintoc {4}{References}{14}{0}{4}
+=======
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Method}{3}{0}{2}
+\beamer@sectionintoc {3}{Result}{12}{0}{3}
+>>>>>>> paris
