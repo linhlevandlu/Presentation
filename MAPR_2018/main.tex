@@ -26,6 +26,9 @@
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage{helvet}
+\usepackage[justification=centering]{caption}
+\usepackage{subcaption}
+%\usepackage{multicol}
 
 %-------------------------------------------------------
 % DEFFINING AND REDEFINING COMMANDS
@@ -40,7 +43,7 @@
 % INFORMATION IN THE TITLE PAGE
 %-------------------------------------------------------
 
-\title[] % [] is optional - is placed on the bottom of the sidebar on every slide
+\title[MAPR Conference 2018] % [] is optional - is placed on the bottom of the sidebar on every slide
 { % is placed on the title page
       \textbf{Landmarks Detection by Applying \\Deep Networks}
 }
@@ -50,7 +53,7 @@
 %      \textbf{v. 1.0.0}
 %}
 
-\author[Lilyana Vankova]
+\author[V.L. Le, M. Beurton-Aimar, A. Zemmari, N. Parisey]
 {      Van-Linh LE$^{1,3}$, Marie BEURTON-AIMAR$^{1}$,\\ Akka ZEMMARI$^{1}$, Nicolas PARISEY$^{2}$ \\[0.4cm]
       {\ttfamily\footnotesize{linhlv@dlu.edu.vn/van-linh.le@labri.fr, beurton@labri.fr\\
 		akka.zemmari@labri.fr, nicolas.parisey@inra.fr \\    }
@@ -83,16 +86,9 @@
   \titlepage % call the title page information from above
 \end{frame}}
 
-
-%\begin{frame}{Content}{}
-%\tableofcontents
-%\end{frame}
-
 %-------------------------------------------------------
-\section{Introduction}
-%-------------------------------------------------------
-\subsection{License}
-\begin{frame}{Context}
+
+\begin{frame}[t]{Context}
 %-------------------------------------------------------
 \begin{block}{Morphometry analysis}
   \begin{itemize}    
@@ -104,128 +100,265 @@
   \begin{block}{Landmark}
   \begin{itemize}
      \item A kind of \textbf{point of interest} 
-     \item A specific point defined by biologist. For example, intersection of viens on fly wing, the tip of beetle's mandible.
+     \item A specific point defined by biologist. For example, intersection of viens on fly wing, the tip of beetle's mandible,\ldots
   \end{itemize}
   \end{block}
 \end{frame}
 
 %-------------------------------------------------------
-\section{Installation}
-%-------------------------------------------------------
-\subsection{Source files}
-\begin{frame}{Installation}{Source files}
+
 %-------------------------------------------------------
 
-\begin{block}{}
-The theme contains 4 source files:
-  \begin{itemize}
-    \item {\tt beamercolorthemeFeather.sty}
-    \item {\tt beamerouterthemeFeather.sty}
-    \item {\tt beamerinnerthemeFeather.sty}
-    \item {\tt beamerthemeFeather.sty}
-  \end{itemize}
-\end{block}
+\begin{frame}[c]{Dataset}
+%-------------------------------------------------------
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+    			\item Images have been taken from $293$ \textbf{beetles}, seperate into 5 parts (images),
+    			\item Format: $2$D in RGB color,
+    			\item Focus on \textbf{\color{red}pronotum} images.
+  			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}  %%<--- here
+    		\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=1]{images/pronotum}
+        			%\caption{\footnotesize{Pronotum}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}
+		\end{column}
+	\end{columns}~\\
+	\begin{figure}[htbp]
+   				\begin{subfigure}[t]{0.22\textwidth}
+        			\centering
+        			\includegraphics[scale=.13]{images/mgmo}
+        			\caption{\footnotesize{Left mandible}}
+        			\label{figsub11}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.22\textwidth}
+        			\centering
+        			\includegraphics[scale=.13]{images/mdmo}
+        			\caption{\footnotesize{Right mandible}}
+        			\label{figsub22}
+    			\end{subfigure}
+    			~ 
+    			\begin{subfigure}[t]{0.22\textwidth}
+        			\centering
+        			\includegraphics[scale=.16]{images/elytre2}
+        			\caption{\footnotesize{Body}}
+        			\label{figsub22}
+    			\end{subfigure}
+    			~ 
+    			\begin{subfigure}[t]{0.22\textwidth}
+        			\centering
+        			\includegraphics[scale=.16]{images/tete2}
+        			\caption{\footnotesize{Head}}
+        			\label{figsub22}
+    			\end{subfigure}
+			\end{figure}
 \end{frame}
 
 %-------------------------------------------------------
-\subsection{Local and Global installation}
-\begin{frame}{Installation}{Local and Global installation}
-%-------------------------------------------------------
-  The theme can be installed for \textbf{local} or \textbf{global} use.
-  \pause
-  \begin{block}{Local Installation}
-  \begin{itemize}    
-    \item Local installation is the simplest way of installing the theme. 
-    \item You need to placing the 4 source files in the same folder as your presentation. When you download the theme, the 4 theme files are located in the {\tt local} folder.
-  \end{itemize}
-  \end{block}
 
-  \begin{block}{Global Installation}
-  \begin{itemize}
-     \item If you wish to make the theme globally available, you must put the files in your local latex directory tree. The location of the root of the local directory tree depends on your operating system and the latex distribution. 
-     \item Detailed steps on how to proceed installation under various operating systems can be found at Beamer documentation.
-  \end{itemize}
-  \end{block}
-\end{frame}
-     
-
+\begin{frame}{Problems}{}
 %-------------------------------------------------------
-\subsection{Required Packages}
-\begin{frame}{Installation}{Required Packages}
-%-------------------------------------------------------
-
-  For using the Feather Theme you will need the Bemaer class installed and the following 2 packages
-  \begin{itemize}
-    \item TikZ\footnote{TikZ is a package for creating beautiful graphics. Have a look at these \chref{http://www.texample.net/tikz/examples/}{online examples} or the \chref{http://tug.ctan.org/tex-archive/graphics/pgf/base/doc/generic/pgf/pgfmanual.pdf}{pgf user manual}.}
-    \item calc
-  \end{itemize}
-  Due to the fact that the packages are very common they should be included in your latex distribution in the first place.
+  \small{With segmentable images:\footnote{\tiny{Van-Linh Le, Marie Beurton-Aimar, Adrien Krähenbühl, and Nicolas Parisey. ``MAELab: a framework to automatize landmark estimation." WSCG 2017.}}}
+	\begin{figure}[htbp]
+  		\centering
+   	 	\includegraphics[scale=.18]{images/sift_method}
+   	 	%\caption{\footnotesize{Pronotum}}
+	\end{figure}
+\pause
+	\small{With un-segmentable images: }
+  \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=.17]{images/method}
+        %\caption{\footnotesize{Pronotum}}
+	\end{figure}
+\pause	
+	\textbf{\color{red}How to predict the landmarks coordinates?}
 \end{frame}
 
 %-------------------------------------------------------
-\section{User Interface}
-\subsection{Loading the Theme and Theme Options}
-\begin{frame}{User Interface}{Loading the Theme and Theme Options}
-%-------------------------------------------------------
-
-  \begin{block}{The Presentation Theme}
-    The Feather Theme can be loaded in a familiar way. In the reamble of your {\tt tex} file you must type\\ \vspace{5pt} 
-    {\tt \textbackslash usetheme[<options>]\{Feather\}}\\ \vspace{5pt} 
-    The presentation theme loads the inner, outer and color Feather theme files and passes the {\tt <options>} on to these files.
-  \end{block}
-  \begin{block}{The Inner and Outher Themes}
-    If you wish you can load only the inner, or the outher theme directly by\\ \vspace{5pt} 
-    {\tt \textbackslash useinnertheme\{Feather\}} (and it has no options)\\ \vspace{5pt} 
-    {\tt \textbackslash useoutertheme[<options>]\{Feather\}} (it has one option)\\
-    \hspace{20pt}{\tt progressstyle=\{fixedCircCnt or movingCircCnt\}} \\
-    \begin{itemize}
-    \item which set how the progress is illustrated;
-    \item the value {\tt movingCircCnt} is the default.
-    \end{itemize}
-  \end{block}
+\begin{frame}{Content}{}
+\tableofcontents
 \end{frame}
 
-\begin{frame}{User Interface}{Loading the Theme and Theme Options}
+\section{Deep learning and Convolutional Neural Networks}
+\subsection{Deep learning}
+\begin{frame}{Deep learning}{}
+%-------------------------------------------------------
+	\begin{block}{Definition}
+		\begin{itemize}
+			\item A class of machine learning,
+			\item Use a cascade of multiple layers for feature extraction and transformation,
+			\item Learn multiple levels of representation in supervised or unsupervised.
+		\end{itemize}
+	\end{block}
+	\pause
+	\begin{block}{Applications}
+		\begin{itemize}
+			\item Computer vision (image recognition and classification)
+			\item Speech recognition
+			\item Question answering \cite{}, language translation\cite{}
+		\end{itemize}
+	\end{block}
+	%\footcitetext{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, ``Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, 2015.}}
+\end{frame}
+%-------------------------------------------------------
+\subsection{Convolutional neural networks (CNNs)}
+\begin{frame}{CNNs}
+%-------------------------------------------------------
+	\begin{itemize}
+		\item Consists an input, an output and multiple hidden layers
+		\item Arranges the data in $3$ dimensions: \textit{width, height and depth}
+		\item Classical layers: convolutional layers (\textbf{CONV}), pooling layers (\textbf{POOLING}), dropout layers (\textbf{DROPOUT}), full-connected layers (\textbf{FC}), \ldots
+	\end{itemize}
+	\begin{figure}[htbp]
+  		\centering
+   	 	\includegraphics[scale=.37]{images/convarc.eps}
+   	 	\caption{\footnotesize{An example of CNN}}
+	\end{figure}
+\end{frame}
+%-------------------------------------------------------
+\section{Proposed method}
+\subsection{Network architectures}
+\begin{frame}{Proposed method}{Network architecture}
+%-------------------------------------------------------
 
-  \begin{block}{The Color Theme}
-    Also you can load only the color theme by writing in the preamble of the {\tt tex} file 
-    
-    \vspace{5pt} 
-    
-    \begin{itemize}
-    \item {\tt \textbackslash usecolortheme\{Feather\}}
-    \end{itemize}
-    
-    \vspace{5pt}
-    
-    ...or to change the colors of the various elements in the theme
-    
-    \vspace{5pt} 
-    \begin{itemize}
-    \item Change the bar colors: \\    
-    {\tt \textbackslash setbeamercolor \{Feather\}\{fg=<color>, bg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the color of the structural elements: \\    
-    {\tt \textbackslash setbeamercolor\{structure\}\{fg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the frame title text color:\\
-    {\tt \textbackslash setbeamercolor\{frametitle\}\{fg=<color>\}}
-    
-    \vspace{2pt} 
-    
-    \item Change the normal text color background:    
-    {\tt \textbackslash setbeamercolor\{normal text\}\{fg=<color>, bg=<color>\}}
-    \end{itemize}
-  \end{block}
+  \begin{columns}
+		\begin{column}{0.45\textwidth}
+			The first model includes: 
+			\small{
+			\begin{itemize}
+				\item An gray-scale input,
+    			\item $3$ CNN layers,
+    			\item $3$ POOLING layers,
+    			\item $3$ FC layers.
+  			\end{itemize}}
+  			Problems:
+  			\small{
+  			\begin{itemize}
+  				\item Output is not good enough,
+  				\item Overfitting.
+  			\end{itemize}
+  			}
+		\end{column}
+		\begin{column}{0.6\textwidth}  %%<--- here
+    		\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=.4]{images/architecture1}
+        			%\caption{\footnotesize{Pronotum}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}
+		\end{column}
+	\end{columns}~\\
+\end{frame}
+%-------------------------------------------------------
+\begin{frame}{Proposed method}{Network architecture}
+  \begin{columns}
+		\begin{column}{0.45\textwidth}	
+			\only<1>{			
+			The second model: 
+			\small{
+			\begin{itemize}
+				\item Has the same architecture with the first one,
+    			\item Modify the output of FC layers,
+    			\item Result is not improved.
+  			\end{itemize}}
+			}
+			\only<2>{
+			The \textbf{third} model includes: 
+			\small{
+			\begin{itemize}
+				\item An gray-scale input,
+    			\item $3$ CNN layers,
+    			\item $3$ POOLING layers,
+    			\item \textbf{$4$ DROPOUT layers,}
+    			\item $3$ FC layers.
+  			\end{itemize}
+  			}}
+  			
+		\end{column}
+		\begin{column}{0.6\textwidth}  %%<--- here
+			\only<1>{
+    		\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=.44]{images/architecture2}
+        			%\caption{\footnotesize{Pronotum}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}
+     		}
+     		\only<2>
+     		{
+     		\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=.4]{images/architecture3}
+        			%\caption{\footnotesize{Pronotum}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}
+     		}
+		\end{column}
+	\end{columns}~\\
+\end{frame}
+\begin{frame}{Proposed method}{Data augmentation}
+	\only<1,4>{Dataset: $293$ pronotum images in RGB format.\\}
+	\only<2-4>{Augmentation methods:
+	\begin{itemize}
+		\only<2,4>{\item Increase the value of each channel,}
+		\only<3,4>{\item Split the channels.}
+	\end{itemize}
+	}
+	\only<4>{Total: $293 \times 7 = 2051$ images}
+	
+
+\only<2>{
+  \begin{center}
+     \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=.45]{images/inc_channels}
+       	%\caption{\footnotesize{Pronotum}}
+    	\label{figrsexample1}
+	\end{figure}
+  \end{center}
+  }
+
+ \only<3>{
+  \begin{center}
+     \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=.45]{images/sp_channels}
+       	%\caption{\footnotesize{Pronotum}}
+    	\label{figrsexample1}
+	\end{figure}
+  \end{center}
+  }
+
+  \only<4>{
+  \begin{center}
+     \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=.25]{images/data_aug}
+       	%\caption{\footnotesize{Pronotum}}
+    	\label{figrsexample1}
+	\end{figure}
+  \end{center}
+  }
+
 \end{frame}
 
 
 %-------------------------------------------------------
-\subsection{Feather image}
+\subsection{Data augmentation}
 \begin{frame}{User Interface}{The Feather Background Image}
 %-------------------------------------------------------
 
@@ -244,6 +377,66 @@ The theme contains 4 source files:
 \end{block}
 \end{frame}
 
+%-------------------------------------------------------
+\subsection{Training}
+\begin{frame}{User Interface}{The Feather Background Image}
+%-------------------------------------------------------
+
+\begin{block}{The Feather Background Image}
+    \begin{itemize}
+    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
+    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
+    \end{itemize} 
+    
+    \vspace{5pt} 
+    
+  {\tt \{\textbackslash 1bg\\
+    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
+    \ldots\\
+    \textbackslash end\{frame\}\}}
+\end{block}
+\end{frame}
+
+%-------------------------------------------------------
+\section{Experiments}
+\begin{frame}{User Interface}{The Feather Background Image}
+%-------------------------------------------------------
+
+\begin{block}{The Feather Background Image}
+    \begin{itemize}
+    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
+    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
+    \end{itemize} 
+    
+    \vspace{5pt} 
+    
+  {\tt \{\textbackslash 1bg\\
+    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
+    \ldots\\
+    \textbackslash end\{frame\}\}}
+\end{block}
+\end{frame}
+
+%-------------------------------------------------------
+\section{Conclusion}
+\begin{frame}{User Interface}{The Feather Background Image}
+%-------------------------------------------------------
+
+\begin{block}{The Feather Background Image}
+    \begin{itemize}
+    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
+    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
+    \end{itemize} 
+    
+    \vspace{5pt} 
+    
+  {\tt \{\textbackslash 1bg\\
+    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
+    \ldots\\
+    \textbackslash end\{frame\}\}}
+\end{block}
+\end{frame}
+%-------------------------------------------------------
 
 {\1
 \begin{frame}[plain,noframenumbering]

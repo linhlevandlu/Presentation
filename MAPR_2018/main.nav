@@ -1,39 +1,53 @@
 \beamer@endinputifotherversion {3.36pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
-\headcommand {\sectionentry {1}{Introduction}{2}{Introduction}{0}}
-\headcommand {\beamer@sectionpages {1}{1}}
-\headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{License}}\headcommand {\beamer@subsectionpages {2}{1}}
-\headcommand {\slideentry {1}{1}{1}{2/2}{License}{0}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\sectionentry {2}{Installation}{3}{Installation}{0}}
-\headcommand {\beamer@sectionpages {2}{2}}
-\headcommand {\beamer@subsectionpages {2}{2}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{3}{Source files}}\headcommand {\beamer@subsectionpages {3}{2}}
-\headcommand {\slideentry {2}{1}{1}{3/3}{Source files}{0}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{4}{Local and Global installation}}\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\slideentry {2}{2}{1}{4/5}{Local and Global installation}{0}}
-\headcommand {\beamer@framepages {4}{5}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{6}{Required Packages}}\headcommand {\beamer@subsectionpages {4}{5}}
-\headcommand {\slideentry {2}{3}{1}{6/6}{Required Packages}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\sectionentry {3}{User Interface}{7}{User Interface}{0}}
-\headcommand {\beamer@sectionpages {3}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{7}{Loading the Theme and Theme Options}}\headcommand {\beamer@subsectionpages {7}{6}}
-\headcommand {\slideentry {3}{1}{1}{7/7}{Loading the Theme and Theme Options}{0}}
+\headcommand {\slideentry {0}{0}{4}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\slideentry {0}{0}{5}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {3}{1}{2}{8/8}{Loading the Theme and Theme Options}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{9}{Feather image}}\headcommand {\beamer@subsectionpages {7}{8}}
-\headcommand {\slideentry {3}{2}{1}{9/9}{Feather image}{0}}
-\headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {3}{2}{2}{10/10}{Feather image}{0}}
+\headcommand {\sectionentry {1}{Deep learning and Convolutional Neural Networks}{8}{Deep learning and Convolutional Neural Networks}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\headcommand {\beamer@subsectionpages {1}{7}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{8}{Deep learning}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\slideentry {1}{1}{1}{8/9}{Deep learning}{0}}
+\headcommand {\beamer@framepages {8}{9}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{10}{Convolutional neural networks (CNNs)}}\headcommand {\beamer@subsectionpages {8}{9}}
+\headcommand {\slideentry {1}{2}{1}{10/10}{Convolutional neural networks (CNNs)}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@partpages {1}{10}}
-\headcommand {\beamer@subsectionpages {9}{10}}
-\headcommand {\beamer@sectionpages {7}{10}}
-\headcommand {\beamer@documentpages {10}}
-\headcommand {\def \inserttotalframenumber {7}}
+\headcommand {\sectionentry {2}{Proposed method}{11}{Proposed method}{0}}
+\headcommand {\beamer@sectionpages {8}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{Network architectures}}\headcommand {\beamer@subsectionpages {11}{10}}
+\headcommand {\slideentry {2}{1}{1}{11/11}{Network architectures}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{1}{2}{12/13}{Network architectures}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\slideentry {2}{1}{3}{14/17}{Network architectures}{0}}
+\headcommand {\beamer@framepages {14}{17}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{18}{Data augmentation}}\headcommand {\beamer@subsectionpages {11}{17}}
+\headcommand {\slideentry {2}{2}{1}{18/18}{Data augmentation}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{19}{Training}}\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {2}{3}{1}{19/19}{Training}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\sectionentry {3}{Experiments}{20}{Experiments}{0}}
+\headcommand {\beamer@sectionpages {11}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\slideentry {3}{0}{1}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\sectionentry {4}{Conclusion}{21}{Conclusion}{0}}
+\headcommand {\beamer@sectionpages {20}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\slideentry {4}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {4}{0}{2}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\beamer@sectionpages {21}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\def \inserttotalframenumber {13}}

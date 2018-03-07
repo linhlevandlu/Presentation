@@ -1,11 +1,11 @@
 \beamer@endinputifotherversion {3.36pt}
 \select@language {english}
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{License}{2}{0}{1}
-\beamer@sectionintoc {2}{Installation}{3}{0}{2}
-\beamer@subsectionintoc {2}{1}{Source files}{3}{0}{2}
-\beamer@subsectionintoc {2}{2}{Local and Global installation}{4}{0}{2}
-\beamer@subsectionintoc {2}{3}{Required Packages}{6}{0}{2}
-\beamer@sectionintoc {3}{User Interface}{7}{0}{3}
-\beamer@subsectionintoc {3}{1}{Loading the Theme and Theme Options}{7}{0}{3}
-\beamer@subsectionintoc {3}{2}{Feather image}{9}{0}{3}
+\beamer@sectionintoc {1}{Deep learning and Convolutional Neural Networks}{8}{0}{1}
+\beamer@subsectionintoc {1}{1}{Deep learning}{8}{0}{1}
+\beamer@subsectionintoc {1}{2}{Convolutional neural networks (CNNs)}{10}{0}{1}
+\beamer@sectionintoc {2}{Proposed method}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Network architectures}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Data augmentation}{18}{0}{2}
+\beamer@subsectionintoc {2}{3}{Training}{19}{0}{2}
+\beamer@sectionintoc {3}{Experiments}{20}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{21}{0}{4}
