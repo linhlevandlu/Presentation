@@ -5,7 +5,7 @@
 \beamer@subsectionintoc {1}{2}{Convolutional neural networks (CNNs)}{10}{0}{1}
 \beamer@sectionintoc {2}{Proposed method}{11}{0}{2}
 \beamer@subsectionintoc {2}{1}{Network architectures}{11}{0}{2}
-\beamer@subsectionintoc {2}{2}{Data augmentation}{18}{0}{2}
-\beamer@subsectionintoc {2}{3}{Training}{19}{0}{2}
-\beamer@sectionintoc {3}{Experiments}{20}{0}{3}
-\beamer@sectionintoc {4}{Conclusion}{21}{0}{4}
+\beamer@subsectionintoc {2}{2}{Data augmentation}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{Training}{18}{0}{2}
+\beamer@sectionintoc {3}{Result}{19}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{24}{0}{4}

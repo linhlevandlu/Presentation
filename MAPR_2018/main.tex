@@ -186,11 +186,11 @@
 \begin{frame}{Content}{}
 \tableofcontents
 \end{frame}
-
+%-------------------------------------------------------
 \section{Deep learning and Convolutional Neural Networks}
 \subsection{Deep learning}
-\begin{frame}{Deep learning}{}
 %-------------------------------------------------------
+\begin{frame}{Deep learning}{}
 	\begin{block}{Definition}
 		\begin{itemize}
 			\item A class of machine learning,
@@ -210,8 +210,8 @@
 \end{frame}
 %-------------------------------------------------------
 \subsection{Convolutional neural networks (CNNs)}
-\begin{frame}{CNNs}
 %-------------------------------------------------------
+\begin{frame}{CNNs}
 	\begin{itemize}
 		\item Consists an input, an output and multiple hidden layers
 		\item Arranges the data in $3$ dimensions: \textit{width, height and depth}
@@ -226,9 +226,8 @@
 %-------------------------------------------------------
 \section{Proposed method}
 \subsection{Network architectures}
-\begin{frame}{Proposed method}{Network architecture}
 %-------------------------------------------------------
-
+\begin{frame}{Proposed method}{Network architecture}
   \begin{columns}
 		\begin{column}{0.45\textwidth}
 			The first model includes: 
@@ -310,6 +309,9 @@
 		\end{column}
 	\end{columns}~\\
 \end{frame}
+%-------------------------------------------------------
+\subsection{Data augmentation}
+%-------------------------------------------------------
 \begin{frame}{Proposed method}{Data augmentation}
 	\only<1,4>{Dataset: $293$ pronotum images in RGB format.\\}
 	\only<2-4>{Augmentation methods:
@@ -319,8 +321,6 @@
 	\end{itemize}
 	}
 	\only<4>{Total: $293 \times 7 = 2051$ images}
-	
-
 \only<2>{
   \begin{center}
      \begin{figure}[htbp]
@@ -331,7 +331,6 @@
 	\end{figure}
   \end{center}
   }
-
  \only<3>{
   \begin{center}
      \begin{figure}[htbp]
@@ -342,7 +341,6 @@
 	\end{figure}
   \end{center}
   }
-
   \only<4>{
   \begin{center}
      \begin{figure}[htbp]
@@ -355,92 +353,154 @@
   }
 
 \end{frame}
-
-
-%-------------------------------------------------------
-\subsection{Data augmentation}
-\begin{frame}{User Interface}{The Feather Background Image}
-%-------------------------------------------------------
-
-\begin{block}{The Feather Background Image}
-    \begin{itemize}
-    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
-    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
-    \end{itemize} 
-    
-    \vspace{5pt} 
-    
-  {\tt \{\textbackslash 1bg\\
-    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
-    \ldots\\
-    \textbackslash end\{frame\}\}}
-\end{block}
-\end{frame}
-
 %-------------------------------------------------------
 \subsection{Training}
-\begin{frame}{User Interface}{The Feather Background Image}
 %-------------------------------------------------------
-
-\begin{block}{The Feather Background Image}
-    \begin{itemize}
-    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
-    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
-    \end{itemize} 
-    
-    \vspace{5pt} 
-    
-  {\tt \{\textbackslash 1bg\\
-    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
-    \ldots\\
-    \textbackslash end\{frame\}\}}
-\end{block}
+\begin{frame}{Proposed method}{Training}
+	\begin{itemize}
+		\item Model: the third model in 5000 epochs\footnote{\tiny{An epoch is a single pass through the full training set.}}
+		\item Training dataset: $1820$ images ($260 \times 7$)
+		\item Testing set: $33$ images
+		\item Images shows training and validation losses of models.\\ \small{{\color{blue}Blue} curves are training losses, {\color{green}green} curves are validation losses.}
+	\end{itemize}
+	\begin{figure}[htbp]
+   				\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.2]{images/loss_model_1}
+        			\caption{\scriptsize{The first architecture}}
+        			\label{figsub11}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.22]{images/loss_model_3}
+        			\caption{\scriptsize{The third architecture }}
+        			\label{figsub22}
+    			\end{subfigure}    		
+    			%\caption{\scriptsize{Training and validation losses of models. Blue curves are training losses, green curves are validation losses.}}	
+			\end{figure}
 \end{frame}
 
 %-------------------------------------------------------
-\section{Experiments}
-\begin{frame}{User Interface}{The Feather Background Image}
+\section{Result}
 %-------------------------------------------------------
+\begin{frame}{Result}{Average distance}
+	\begin{itemize}
+		\item Run the trained model to predict the landmarks on testing images,
+		\item Calculate the distance between predicted landmarks and corresponding manual landmarks,
+		\item Compute the average distance of all images per landmark.
+	\end{itemize}
+	\begin{center}
+		\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|c|c|}
+		\hline
+		\textbf{$\#$Landmark} & \textbf{Distance} (in pixels) \\ \hline
+			1 & 4.002  \\ \hline
+			2 & 4.4831 \\ \hline
+			3 & 4.2959 \\ \hline
+			4 & 4.3865 \\ \hline
+			5 & 4.2925 \\ \hline
+			6 & 5.3631 \\ \hline
+			7 & 4.636 \\ \hline
+			8 & 4.9363 \\ \hline
+		\end{tabular}
 
-\begin{block}{The Feather Background Image}
-    \begin{itemize}
-    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
-    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
-    \end{itemize} 
-    
-    \vspace{5pt} 
-    
-  {\tt \{\textbackslash 1bg\\
-    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
-    \ldots\\
-    \textbackslash end\{frame\}\}}
-\end{block}
+		\end{table}
+	\end{center}
 \end{frame}
 
+%-------------------------------------------------------
+
+\begin{frame}{Result}{Landmarks on images}
+%-------------------------------------------------------
+Images show the result on testing images.
+\begin{figure}[htbp]
+   				\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.135]{images/plandmark}
+        			\caption{ }
+        			\label{figsub11}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.2]{images/plandmark2}
+        			\caption{ }
+        			\label{figsub22}
+    			\end{subfigure}    		
+    			%\caption{\scriptsize{Training and validation losses of models. Blue curves are training losses, green curves are validation losses.}}	
+			\end{figure}
+\end{frame}
+%-------------------------------------------------------
+\begin{frame}{Result}{Statistic on acceptable predicted landmarks}
+Chart shows the propotion of acceptable predicted landmarks
+\footnotesize{
+	\begin{itemize}
+		\item Average accuracy: $\sim 75\%$
+		\item Highest accuracy: $87.88\%$
+		\item Lowest accuracy: $66.67\%$
+	\end{itemize}
+	}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[scale=.6]{images/chart2}	
+	\end{figure}
+\end{frame}
+%-------------------------------------------------------
+\begin{frame}{Result}{Distribution of distance on the first landmark}
+\small{
+	\begin{itemize}
+		\item Good prediction: $56.66\%$
+		\item Acceptable prediction: $40.27\%$
+		\item Bad prediction: $3.07\%$
+	\end{itemize}
+	}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[scale=.3]{images/statistic}	
+	\end{figure}
+\end{frame}
+%-------------------------------------------------------
+\begin{frame}{Result}{Comparing with related works}
+\small{Quality metrics: coefficient of determination ($r^2$), explained variance (EV), Pearson correlation.
+	}
+	\begin{table}[htbp]
+\centering
+\begin{center}
+\begin{tabular}{|c|p{1cm}|p{1cm}|p{1.5cm}|}
+\hline
+Metric & $\mathbf{r^{2}}$ & \textbf{EV} & \textbf{Pearson} \\ \hline
+Cintast et al. \cite{cintas2016automatic} & $0.884$ & $0.951$ & $0.976$ \\ \hline
+Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}$ \\ \hline
+\end{tabular}
+\label{tab3}
+\end{center}
+\end{table}
+\end{frame}
 %-------------------------------------------------------
 \section{Conclusion}
-\begin{frame}{User Interface}{The Feather Background Image}
+\begin{frame}{Conclusion}
 %-------------------------------------------------------
-
-\begin{block}{The Feather Background Image}
-    \begin{itemize}
-    \item In Feather theme, the title page frame and the last frame have the Feather image as the background image. 
-    \item The Feather background image can be produced to any frame by wrating on the begining at the choosen frame the following
-    \end{itemize} 
-    
-    \vspace{5pt} 
-    
-  {\tt \{\textbackslash 1bg\\
-    \textbackslash begin\{frame\}[<options>]\{Frame Title\}\{Frame Subtitle\}\\
-    \ldots\\
-    \textbackslash end\{frame\}\}}
-\end{block}
+	\begin{block}{Conclusion}
+		\small{
+			\begin{itemize}
+				\item Proposed a CNN to predict the landmarks on pronotum images.
+				\item Proposed procedure to augment the dataset.
+				\item The location of the predicted landmarks are acceptable with high accuracy ($ \sim75\%$). It allows to replace manual landmarks.
+			\end{itemize}
+		}
+	\end{block}
+	\pause
+	\begin{block}{Future works}
+		\small{Continue improving the landmarks coordinates by continuing on deep learning, \textit{for example}, using transfer learning.}
+	\end{block}
 \end{frame}
 %-------------------------------------------------------
 
 {\1
 \begin{frame}[plain,noframenumbering]
-  \finalpage{Thank you for using Feather Beamer Theme!}
+  \finalpage{Thank you for attention!}
 \end{frame}}
 
 \end{document}
