@@ -191,21 +191,30 @@
 \subsection{Deep learning}
 %-------------------------------------------------------
 \begin{frame}{Deep learning}{}
+	\only<1-2>{
 	\begin{block}{Definition}
 		\begin{itemize}
-			\item A class of machine learning,
+			\item A class of machine learning\footnotemark[1],
 			\item Use a cascade of multiple layers for feature extraction and transformation,
 			\item Learn multiple levels of representation in supervised or unsupervised.
 		\end{itemize}
-	\end{block}
-	\pause
+	\end{block}{\footnotetext[1]{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, “Deep learning,” Nature, vol. 521, no. 7553, pp. 436–444, 2015}}}
+	}
+	\only<2>{
 	\begin{block}{Applications}
 		\begin{itemize}
-			\item Computer vision (image recognition and classification)
-			\item Speech recognition
-			\item Question answering \cite{}, language translation\cite{}
+			\item Computer vision (image recognition and classification)\footnotemark[2]
+			\item Speech recognition\footnotemark[3]
+			\item Question answering \footnotemark[4], language translation\footnotemark[5]
 		\end{itemize}
 	\end{block}
+	{
+	\footnotetext[2]{\tiny{A. Krizhevsky et al, ``Imagenet classification with deep convolutional neural networks", 2012.}}
+	\footnotetext[3]{\tiny{T. N. Sainath et al, ``Deep convolutional neural networks for lvcsr", 2013.}}
+	\footnotetext[4]{\tiny{A. Bordes et al, ``Question answering with subgraph embeddings", 2014.}}
+	\footnotetext[5]{\tiny{I. Sutskever et al, ``Sequence to sequence learning with neural networks", 2014.}}
+}
+}
 	%\footcitetext{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, ``Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, 2015.}}
 \end{frame}
 %-------------------------------------------------------
@@ -213,15 +222,21 @@
 %-------------------------------------------------------
 \begin{frame}{CNNs}
 	\begin{itemize}
-		\item Consists an input, an output and multiple hidden layers
+		\item Consists an input, an output and multiple hidden layers\footnotemark[1]
 		\item Arranges the data in $3$ dimensions: \textit{width, height and depth}
 		\item Classical layers: convolutional layers (\textbf{CONV}), pooling layers (\textbf{POOLING}), dropout layers (\textbf{DROPOUT}), full-connected layers (\textbf{FC}), \ldots
 	\end{itemize}
 	\begin{figure}[htbp]
   		\centering
-   	 	\includegraphics[scale=.37]{images/convarc.eps}
-   	 	\caption{\footnotesize{An example of CNN}}
+   	 	\includegraphics[scale=.35]{images/convarc.eps}
+   	 	%\caption{\footnotesize{An example of CNN}}
 	\end{figure}
+	\footnotetext{
+		\tiny{
+			Y. LeCun et al, ``Convolutional networks
+and applications in vision", 2010.
+		}
+	}
 \end{frame}
 %-------------------------------------------------------
 \section{Proposed method}
@@ -358,10 +373,10 @@
 %-------------------------------------------------------
 \begin{frame}{Proposed method}{Training}
 	\begin{itemize}
-		\item Model: the third model in 5000 epochs\footnote{\tiny{An epoch is a single pass through the full training set.}}
+		\item Model: the third model in 5000 epochs\footnotemark
 		\item Training dataset: $1820$ images ($260 \times 7$)
 		\item Testing set: $33$ images
-		\item Images shows training and validation losses of models.\\ \small{{\color{blue}Blue} curves are training losses, {\color{green}green} curves are validation losses.}
+		\item Images shows training and validation losses of the models.\\ \small{{\color{blue}Blue} curves are training losses, {\color{green}green} curves are validation losses.}
 	\end{itemize}
 	\begin{figure}[htbp]
    				\begin{subfigure}[t]{0.5\textwidth}
@@ -379,10 +394,34 @@
     			\end{subfigure}    		
     			%\caption{\scriptsize{Training and validation losses of models. Blue curves are training losses, green curves are validation losses.}}	
 			\end{figure}
+	\footnotetext{\tiny{An epoch is a single pass through the full training set.}}
 \end{frame}
 
 %-------------------------------------------------------
 \section{Result}
+%-------------------------------------------------------
+%-------------------------------------------------------
+
+\begin{frame}{Result}{Landmarks on images}
+%-------------------------------------------------------
+Images show the result on testing images.
+\begin{figure}[htbp]
+   				\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.135]{images/plandmark}
+        			\caption{ }
+        			\label{figsub11}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.2]{images/plandmark2}
+        			\caption{ }
+        			\label{figsub22}
+    			\end{subfigure}    		
+    			%\caption{\scriptsize{Training and validation losses of models. Blue curves are training losses, green curves are validation losses.}}	
+			\end{figure}
+\end{frame}
 %-------------------------------------------------------
 \begin{frame}{Result}{Average distance}
 	\begin{itemize}
@@ -410,28 +449,6 @@
 	\end{center}
 \end{frame}
 
-%-------------------------------------------------------
-
-\begin{frame}{Result}{Landmarks on images}
-%-------------------------------------------------------
-Images show the result on testing images.
-\begin{figure}[htbp]
-   				\begin{subfigure}[t]{0.5\textwidth}
-        			\centering
-        			\includegraphics[scale=.135]{images/plandmark}
-        			\caption{ }
-        			\label{figsub11}
-    			\end{subfigure}%
-    			~ 
-    			\begin{subfigure}[t]{0.5\textwidth}
-        			\centering
-        			\includegraphics[scale=.2]{images/plandmark2}
-        			\caption{ }
-        			\label{figsub22}
-    			\end{subfigure}    		
-    			%\caption{\scriptsize{Training and validation losses of models. Blue curves are training losses, green curves are validation losses.}}	
-			\end{figure}
-\end{frame}
 %-------------------------------------------------------
 \begin{frame}{Result}{Statistic on acceptable predicted landmarks}
 Chart shows the propotion of acceptable predicted landmarks
@@ -471,12 +488,14 @@ Chart shows the propotion of acceptable predicted landmarks
 \begin{tabular}{|c|p{1cm}|p{1cm}|p{1.5cm}|}
 \hline
 Metric & $\mathbf{r^{2}}$ & \textbf{EV} & \textbf{Pearson} \\ \hline
-Cintast et al. \cite{cintas2016automatic} & $0.884$ & $0.951$ & $0.976$ \\ \hline
+Cintast et al.\footnotemark & $0.884$ & $0.951$ & $0.976$ \\ \hline
 Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}$ \\ \hline
 \end{tabular}
 \label{tab3}
 \end{center}
 \end{table}
+\footnotetext{\tiny{Cintas, ``Automatic ear detection and feature extraction using
+geometric morphometrics and convolutional neural networks," IET Biometrics, vol. 6, no. 3, pp. 211–223, 2016}}
 \end{frame}
 %-------------------------------------------------------
 \section{Conclusion}
