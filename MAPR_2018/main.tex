@@ -100,8 +100,12 @@
   \begin{block}{Landmark}
   \begin{itemize}
      \item A kind of \textbf{point of interest} 
-     \item A specific point defined by biologist. For example, intersection of viens on fly wing, the tip of beetle's mandible,\ldots
+     \item A specific point defined by biologist. For example, intersection of veins on fly wing, the tip of beetle's mandible,\ldots
   \end{itemize}
+  	\begin{figure}[htbp]
+       \centering
+       \includegraphics[scale=.17]{images/wing}
+	\end{figure}
   \end{block}
 \end{frame}
 
@@ -242,15 +246,17 @@ and applications in vision", 2010.
 \section{Proposed method}
 \subsection{Network architectures}
 %-------------------------------------------------------
-\begin{frame}{Proposed method}{Network architecture}
+%-------------------------------------------------------
+\begin{frame}{Network architecture}{}
   \begin{columns}
-		\begin{column}{0.45\textwidth}
+		\begin{column}{0.4\textwidth}	
+			\only<1>{
 			The first model includes: 
 			\small{
 			\begin{itemize}
 				\item An gray-scale input,
-    			\item $3$ CNN layers,
-    			\item $3$ POOLING layers,
+    			\item $3$ CNN layers (C1, C2, C3),
+    			\item $3$ POOLING layers (P1, P2, P3),
     			\item $3$ FC layers.
   			\end{itemize}}
   			Problems:
@@ -260,62 +266,53 @@ and applications in vision", 2010.
   				\item Overfitting.
   			\end{itemize}
   			}
-		\end{column}
-		\begin{column}{0.6\textwidth}  %%<--- here
-    		\begin{center}
-     			\begin{figure}[htbp]
-        			\centering
-        			\includegraphics[scale=.4]{images/architecture1}
-        			%\caption{\footnotesize{Pronotum}}
-    				\label{figrsexample1}
-				\end{figure}
-     		\end{center}
-		\end{column}
-	\end{columns}~\\
-\end{frame}
-%-------------------------------------------------------
-\begin{frame}{Proposed method}{Network architecture}
-  \begin{columns}
-		\begin{column}{0.45\textwidth}	
-			\only<1>{			
+  			}
+			\only<2>{			
 			The second model: 
 			\small{
 			\begin{itemize}
-				\item Has the same architecture with the first one,
-    			\item Modify the output of FC layers,
+				\item Same architecture with the first one,
+    			\item Modify the output of FC layers ($500$ -> $1000$),
     			\item Result is not improved.
   			\end{itemize}}
 			}
-			\only<2>{
+			\only<3>{
 			The \textbf{third} model includes: 
 			\small{
 			\begin{itemize}
-				\item An gray-scale input,
-    			\item $3$ CNN layers,
-    			\item $3$ POOLING layers,
-    			\item \textbf{$4$ DROPOUT layers,}
-    			\item $3$ FC layers.
+				\item Keep architecture of the second model,
+    			\item Adding \textbf{$4$ DROPOUT layers} (D1, D2, D3, D4)    			
   			\end{itemize}
   			}}
   			
 		\end{column}
 		\begin{column}{0.6\textwidth}  %%<--- here
 			\only<1>{
+			\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=.4]{images/architecture1}
+        			%\caption{\footnotesize{Pronotum}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}	
+     		}		
+			\only<2>{
     		\begin{center}
      			\begin{figure}[htbp]
         			\centering
-        			\includegraphics[scale=.44]{images/architecture2}
+        			\includegraphics[scale=.444]{images/architecture2}
         			%\caption{\footnotesize{Pronotum}}
     				\label{figrsexample1}
 				\end{figure}
      		\end{center}
      		}
-     		\only<2>
+     		\only<3>
      		{
      		\begin{center}
      			\begin{figure}[htbp]
         			\centering
-        			\includegraphics[scale=.4]{images/architecture3}
+        			\includegraphics[scale=.405]{images/architecture3}
         			%\caption{\footnotesize{Pronotum}}
     				\label{figrsexample1}
 				\end{figure}
@@ -327,7 +324,7 @@ and applications in vision", 2010.
 %-------------------------------------------------------
 \subsection{Data augmentation}
 %-------------------------------------------------------
-\begin{frame}{Proposed method}{Data augmentation}
+\begin{frame}{Data augmentation}{}
 	\only<1,4>{Dataset: $293$ pronotum images in RGB format.\\}
 	\only<2-4>{Augmentation methods:
 	\begin{itemize}
@@ -371,12 +368,13 @@ and applications in vision", 2010.
 %-------------------------------------------------------
 \subsection{Training}
 %-------------------------------------------------------
-\begin{frame}{Proposed method}{Training}
+\begin{frame}{Training}{}
 	\begin{itemize}
 		\item Model: the third model in 5000 epochs\footnotemark
 		\item Training dataset: $1820$ images ($260 \times 7$)
 		\item Testing set: $33$ images
 		\item Images shows training and validation losses of the models.\\ \small{{\color{blue}Blue} curves are training losses, {\color{green}green} curves are validation losses.}
+		\item Training time: 3 hours using NVIDIA TITAN X card.
 	\end{itemize}
 	\begin{figure}[htbp]
    				\begin{subfigure}[t]{0.5\textwidth}
@@ -523,3 +521,39 @@ geometric morphometrics and convolutional neural networks," IET Biometrics, vol.
 \end{frame}}
 
 \end{document}
+
+
+
+
+
+\begin{frame}{Network architecture}
+  \begin{columns}
+		\begin{column}{0.4\textwidth}
+			The first model includes: 
+			\small{
+			\begin{itemize}
+				\item An gray-scale input,
+    			\item $3$ CNN layers (C1, C2, C3),
+    			\item $3$ POOLING layers (P1,P2,P3),
+    			\item $3$ FC layers.
+  			\end{itemize}}
+  			Problems:
+  			\small{
+  			\begin{itemize}
+  				\item Output is not good enough,
+  				\item Overfitting.
+  			\end{itemize}
+  			}
+		\end{column}
+		\begin{column}{0.6\textwidth}  %%<--- here
+    		\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=.4]{images/architecture1}
+        			%\caption{\footnotesize{Pronotum}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}
+		\end{column}
+	\end{columns}~\\
+\end{frame}

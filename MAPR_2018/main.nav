@@ -22,10 +22,8 @@
 \headcommand {\beamer@sectionpages {8}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
 \headcommand {\beamer@subsectionentry {0}{2}{1}{11}{Network architectures}}\headcommand {\beamer@subsectionpages {11}{10}}
-\headcommand {\slideentry {2}{1}{1}{11/11}{Network architectures}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{1}{2}{12/13}{Network architectures}{0}}
-\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\slideentry {2}{1}{1}{11/13}{Network architectures}{0}}
+\headcommand {\beamer@framepages {11}{13}}
 \headcommand {\beamer@subsectionentry {0}{2}{2}{14}{Data augmentation}}\headcommand {\beamer@subsectionpages {11}{13}}
 \headcommand {\slideentry {2}{2}{1}{14/17}{Data augmentation}{0}}
 \headcommand {\beamer@framepages {14}{17}}
@@ -56,4 +54,4 @@
 \headcommand {\beamer@subsectionpages {24}{26}}
 \headcommand {\beamer@sectionpages {24}{26}}
 \headcommand {\beamer@documentpages {26}}
-\headcommand {\def \inserttotalframenumber {16}}
+\headcommand {\def \inserttotalframenumber {15}}
