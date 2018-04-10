@@ -1,0 +1,57 @@
+\beamer@endinputifotherversion {3.36pt}
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\slideentry {0}{0}{3}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {0}{0}{4}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\slideentry {0}{0}{5}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\sectionentry {1}{Deep learning and Convolutional Neural Networks}{8}{Deep learning and Convolutional Neural Networks}{0}}
+\headcommand {\beamer@sectionpages {1}{7}}
+\headcommand {\beamer@subsectionpages {1}{7}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{8}{Deep learning}}\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\slideentry {1}{1}{1}{8/9}{Deep learning}{0}}
+\headcommand {\beamer@framepages {8}{9}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{10}{Convolutional neural networks (CNNs)}}\headcommand {\beamer@subsectionpages {8}{9}}
+\headcommand {\slideentry {1}{2}{1}{10/10}{Convolutional neural networks (CNNs)}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\sectionentry {2}{Proposed method}{11}{Proposed method}{0}}
+\headcommand {\beamer@sectionpages {8}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{Network architectures}}\headcommand {\beamer@subsectionpages {11}{10}}
+\headcommand {\slideentry {2}{1}{1}{11/13}{Network architectures}{0}}
+\headcommand {\beamer@framepages {11}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{14}{Data augmentation}}\headcommand {\beamer@subsectionpages {11}{13}}
+\headcommand {\slideentry {2}{2}{1}{14/17}{Data augmentation}{0}}
+\headcommand {\beamer@framepages {14}{17}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{18}{Training}}\headcommand {\beamer@subsectionpages {14}{17}}
+\headcommand {\slideentry {2}{3}{1}{18/18}{Training}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\sectionentry {3}{Result}{19}{Result}{0}}
+\headcommand {\beamer@sectionpages {11}{18}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\slideentry {3}{0}{1}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {3}{0}{2}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {3}{0}{3}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{0}{4}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{0}{5}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\sectionentry {4}{Conclusion}{24}{Conclusion}{0}}
+\headcommand {\beamer@sectionpages {19}{23}}
+\headcommand {\beamer@subsectionpages {19}{23}}
+\headcommand {\slideentry {4}{0}{1}{24/25}{}{0}}
+\headcommand {\beamer@framepages {24}{25}}
+\headcommand {\slideentry {4}{0}{2}{26/26}{}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@partpages {1}{26}}
+\headcommand {\beamer@subsectionpages {24}{26}}
+\headcommand {\beamer@sectionpages {24}{26}}
+\headcommand {\beamer@documentpages {26}}
+\headcommand {\def \inserttotalframenumber {15}}
