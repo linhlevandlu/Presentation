@@ -100,11 +100,12 @@
   \begin{block}{Landmark}
   \begin{itemize}
      \item A kind of \textbf{point of interest} 
-     \item A specific point defined by biologist. For example, intersection of veins on fly wing, the tip of beetle's mandible,\ldots
+     \item A specific point defined by biologist. For example, intersection of veins on fly wing, the corner of beetle's pronotum,\ldots
   \end{itemize}
   	\begin{figure}[htbp]
        \centering
-       \includegraphics[scale=.17]{images/wing}
+       \includegraphics[scale=.17]{images/wing}~~~~~~
+       \includegraphics[scale=.3]{images/pronotum_lm}~~
 	\end{figure}
   \end{block}
 \end{frame}
@@ -169,20 +170,15 @@
 
 \begin{frame}{Problems}{}
 %-------------------------------------------------------
-  \small{With segmentable images:\footnote{\tiny{Van-Linh Le, Marie Beurton-Aimar, Adrien Krähenbühl, and Nicolas Parisey. ``MAELab: a framework to automatize landmark estimation." WSCG 2017.}}}
-	\begin{figure}[htbp]
-  		\centering
-   	 	\includegraphics[scale=.18]{images/sift_method}
-   	 	%\caption{\footnotesize{Pronotum}}
-	\end{figure}
-\pause
+  
 	\small{With un-segmentable images: }
   \begin{figure}[htbp]
         \centering
-        \includegraphics[scale=.17]{images/method}
+        \includegraphics[scale=.055]{images/prono_003}
+        \pause
+         ~~~~~\includegraphics[scale=.055]{images/prono_003_lm}
         %\caption{\footnotesize{Pronotum}}
 	\end{figure}
-\pause	
 	\textbf{\color{red}How to predict the landmarks coordinates?}
 \end{frame}
 
@@ -196,30 +192,23 @@
 %-------------------------------------------------------
 \begin{frame}{Deep learning}{}
 	\only<1-2>{
-	\begin{block}{Definition}
+	\begin{block}{Definition\footnotemark[1]}
 		\begin{itemize}
-			\item A class of machine learning\footnotemark[1],
+			\item A class of machine learning,
 			\item Use a cascade of multiple layers for feature extraction and transformation,
 			\item Learn multiple levels of representation in supervised or unsupervised.
 		\end{itemize}
 	\end{block}{\footnotetext[1]{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, “Deep learning,” Nature, vol. 521, no. 7553, pp. 436–444, 2015}}}
 	}
 	\only<2>{
-	\begin{block}{Applications}
+	\begin{block}{Applications\footnotemark[1]}
 		\begin{itemize}
-			\item Computer vision (image recognition and classification)\footnotemark[2]
-			\item Speech recognition\footnotemark[3]
-			\item Question answering \footnotemark[4], language translation\footnotemark[5]
+			\item Computer vision (image recognition and classification)
+			\item Speech recognition
+			\item Question answering, language translation
 		\end{itemize}
 	\end{block}
-	{
-	\footnotetext[2]{\tiny{A. Krizhevsky et al, ``Imagenet classification with deep convolutional neural networks", 2012.}}
-	\footnotetext[3]{\tiny{T. N. Sainath et al, ``Deep convolutional neural networks for lvcsr", 2013.}}
-	\footnotetext[4]{\tiny{A. Bordes et al, ``Question answering with subgraph embeddings", 2014.}}
-	\footnotetext[5]{\tiny{I. Sutskever et al, ``Sequence to sequence learning with neural networks", 2014.}}
-}
-}
-	%\footcitetext{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, ``Deep learning," Nature, vol. 521, no. 7553, pp. 436–444, 2015.}}
+	}
 \end{frame}
 %-------------------------------------------------------
 \subsection{Convolutional neural networks (CNNs)}
@@ -251,40 +240,14 @@ and applications in vision", 2010.
   \begin{columns}
 		\begin{column}{0.4\textwidth}	
 			\only<1>{
-			The first model includes: 
+			Elementary block: 
 			\small{
 			\begin{itemize}
-				\item An gray-scale input,
-    			\item $3$ CNN layers (C1, C2, C3),
-    			\item $3$ POOLING layers (P1, P2, P3),
-    			\item $3$ FC layers.
-  			\end{itemize}}
-  			Problems:
-  			\small{
-  			\begin{itemize}
-  				\item Output is not good enough,
-  				\item Overfitting.
-  			\end{itemize}
-  			}
-  			}
-			\only<2>{			
-			The second model: 
-			\small{
-			\begin{itemize}
-				\item Same architecture with the first one,
-    			\item Modify the output of FC layers ($500$ -> $1000$),
-    			\item Result is not improved.
-  			\end{itemize}}
-			}
-			\only<3>{
-			The \textbf{third} model includes: 
-			\small{
-			\begin{itemize}
-				\item Keep architecture of the second model,
-    			\item Adding \textbf{$4$ DROPOUT layers} (D1, D2, D3, D4)    			
-  			\end{itemize}
-  			}}
-  			
+				\item A CONV layer,
+    			\item A maxixum POOLING layer,
+    			\item A DROPOUT layer
+  			\end{itemize}}  			
+  			}			 			
 		\end{column}
 		\begin{column}{0.6\textwidth}  %%<--- here
 			\only<1>{
@@ -296,30 +259,26 @@ and applications in vision", 2010.
     				\label{figrsexample1}
 				\end{figure}
      		\end{center}	
-     		}		
-			\only<2>{
+     		}					     		
+		\end{column}
+	\end{columns}~\\
+	\only<2>{			
+		The proposed model: 
+		\small{
+			\begin{itemize}
+				\item \textbf{Three} elementary blocks,
+    			\item \textbf{Three} full-connected (FC) layers
+    			\item A dropout layer was inserted between the first of two FCs
+  			\end{itemize}}
+  		
     		\begin{center}
      			\begin{figure}[htbp]
         			\centering
-        			\includegraphics[scale=.444]{images/architecture2}
-        			%\caption{\footnotesize{Pronotum}}
-    				\label{figrsexample1}
+        			\includegraphics[scale=.2]{images/arch_model}
 				\end{figure}
      		\end{center}
-     		}
-     		\only<3>
-     		{
-     		\begin{center}
-     			\begin{figure}[htbp]
-        			\centering
-        			\includegraphics[scale=.405]{images/architecture3}
-        			%\caption{\footnotesize{Pronotum}}
-    				\label{figrsexample1}
-				\end{figure}
-     		\end{center}
-     		}
-		\end{column}
-	\end{columns}~\\
+     		
+		}
 \end{frame}
 %-------------------------------------------------------
 \subsection{Data augmentation}
@@ -332,7 +291,7 @@ and applications in vision", 2010.
 		\only<3,4>{\item Split the channels.}
 	\end{itemize}
 	}
-	\only<4>{Total: $293 \times 7 = 2051$ images}
+	\only<4>{Total: $293 \times 7 = 2,051$ images}
 \only<2>{
   \begin{center}
      \begin{figure}[htbp]
@@ -366,32 +325,24 @@ and applications in vision", 2010.
 
 \end{frame}
 %-------------------------------------------------------
-\subsection{Training}
+\subsection{Training from scratch}
 %-------------------------------------------------------
 \begin{frame}{Training}{}
 	\begin{itemize}
-		\item Model: the third model in 5000 epochs\footnotemark
-		\item Training dataset: $1820$ images ($260 \times 7$)
-		\item Testing set: $33$ images
+		\item Model: the third model in $5,000$ epochs\footnotemark
+		\item Training dataset: $1,820$ images ($260 \times 7$)
 		\item Images shows training and validation losses of the models.\\ \small{{\color{blue}Blue} curves are training losses, {\color{green}green} curves are validation losses.}
 		\item Training time: 3 hours using NVIDIA TITAN X card.
 	\end{itemize}
-	\begin{figure}[htbp]
-   				\begin{subfigure}[t]{0.5\textwidth}
-        			\centering
-        			\includegraphics[scale=.2]{images/loss_model_1}
-        			\caption{\scriptsize{The first architecture}}
-        			\label{figsub11}
-    			\end{subfigure}%
-    			~ 
-    			\begin{subfigure}[t]{0.5\textwidth}
-        			\centering
-        			\includegraphics[scale=.22]{images/loss_model_3}
-        			\caption{\scriptsize{The third architecture }}
-        			\label{figsub22}
-    			\end{subfigure}    		
-    			%\caption{\scriptsize{Training and validation losses of models. Blue curves are training losses, green curves are validation losses.}}	
-			\end{figure}
+	\begin{center}
+     \begin{figure}[htbp]
+        \centering
+        \includegraphics[scale=.31]{images/loss_model_3}
+       	%\caption{\footnotesize{Pronotum}}
+    	\label{figrsexample1}
+	\end{figure}
+  \end{center}
+	
 	\footnotetext{\tiny{An epoch is a single pass through the full training set.}}
 \end{frame}
 
@@ -448,6 +399,7 @@ Images show the result on testing images.
 \end{frame}
 
 %-------------------------------------------------------
+\subsection{Fine-tuning}
 \begin{frame}{Result}{Statistic on acceptable predicted landmarks}
 Chart shows the propotion of acceptable predicted landmarks
 \footnotesize{
