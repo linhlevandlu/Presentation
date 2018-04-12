@@ -28,7 +28,7 @@
 \usepackage{helvet}
 \usepackage[justification=centering]{caption}
 \usepackage{subcaption}
-%\usepackage{multicol}
+\usepackage{multirow}
 
 %-------------------------------------------------------
 % DEFFINING AND REDEFINING COMMANDS
@@ -171,15 +171,26 @@
 \begin{frame}{Problems}{}
 %-------------------------------------------------------
   
-	\small{With un-segmentable images: }
+	\small{Un-segmentable images: }
   \begin{figure}[htbp]
         \centering
+        \only<1-3>{
         \includegraphics[scale=.055]{images/prono_003}
-        \pause
-         ~~~~~\includegraphics[scale=.055]{images/prono_003_lm}
-        %\caption{\footnotesize{Pronotum}}
+        }
+        \only<3>{
+        \includegraphics[scale=.03]{images/arrow}
+        }
+        \only<2-3>
+        {
+        	\only<2>{\hspace{3cm}}
+         \includegraphics[scale=.055]{images/prono_003_lm}
+         }
 	\end{figure}
-	\textbf{\color{red}How to predict the landmarks coordinates?}
+	\only<3>{
+	\begin{center}	
+		\textbf{\color{red}How to predict the landmarks coordinates?}	
+	\end{center}
+	}
 \end{frame}
 
 %-------------------------------------------------------
@@ -238,7 +249,7 @@ and applications in vision", 2010.
 %-------------------------------------------------------
 \begin{frame}{Network architecture}{}
   \begin{columns}
-		\begin{column}{0.4\textwidth}	
+		\begin{column}{0.45\textwidth}	
 			\only<1>{
 			Elementary block: 
 			\small{
@@ -249,12 +260,12 @@ and applications in vision", 2010.
   			\end{itemize}}  			
   			}			 			
 		\end{column}
-		\begin{column}{0.6\textwidth}  %%<--- here
+		\begin{column}{0.55\textwidth}  %%<--- here
 			\only<1>{
 			\begin{center}
      			\begin{figure}[htbp]
         			\centering
-        			\includegraphics[scale=.4]{images/architecture1}
+        			\includegraphics[scale=.28]{images/elementary_block}
         			%\caption{\footnotesize{Pronotum}}
     				\label{figrsexample1}
 				\end{figure}
@@ -347,14 +358,14 @@ and applications in vision", 2010.
 \end{frame}
 
 %-------------------------------------------------------
-\section{Result}
-%-------------------------------------------------------
-%-------------------------------------------------------
 
-\begin{frame}{Result}{Landmarks on images}
+\begin{frame}{First result}{Landmarks on images}
 %-------------------------------------------------------
-Images show the result on testing images.
-\begin{figure}[htbp]
+\begin{itemize}
+		\item Run the trained model to predict the landmarks on testing images,
+		\item Calculate the distance between predicted landmarks and corresponding manual landmarks,		
+	\end{itemize}
+			\begin{figure}[htbp]
    				\begin{subfigure}[t]{0.5\textwidth}
         			\centering
         			\includegraphics[scale=.135]{images/plandmark}
@@ -372,34 +383,189 @@ Images show the result on testing images.
 			\end{figure}
 \end{frame}
 %-------------------------------------------------------
-\begin{frame}{Result}{Average distance}
+\begin{frame}{First result}{Correlation metrics and average distances}
 	\begin{itemize}
-		\item Run the trained model to predict the landmarks on testing images,
-		\item Calculate the distance between predicted landmarks and corresponding manual landmarks,
-		\item Compute the average distance of all images per landmark.
+		\item Quality metrics: coefficient of determination ($r^2$), explained variance (EV), Pearson correlation.
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{|c|p{1cm}|p{1cm}|p{1.5cm}|}
+					\hline
+					Metric & $\mathbf{r^{2}}$ & \textbf{EV} & \textbf{Pearson} \\ \hline
+					Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}$ \\ \hline
+				\end{tabular}
+			\end{table}
+		\pause
+		\item The average distances of all images per landmark.
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Landmark} & \textbf{Distance} (in pixels) \\ \hline
+					1 & 4.002  \\ \hline
+					2 & 4.4831 \\ \hline
+					3 & 4.2959 \\ \hline
+					4 & 4.3865 \\ \hline
+					5 & 4.2925 \\ \hline
+					6 & 5.3631 \\ \hline
+					7 & 4.636 \\ \hline
+					8 & 4.9363 \\ \hline
+				\end{tabular}
+			\end{table}
 	\end{itemize}
-	\begin{center}
-		\begin{table}[htbp]
-		\centering
-		\begin{tabular}{|c|c|}
-		\hline
-		\textbf{$\#$Landmark} & \textbf{Distance} (in pixels) \\ \hline
-			1 & 4.002  \\ \hline
-			2 & 4.4831 \\ \hline
-			3 & 4.2959 \\ \hline
-			4 & 4.3865 \\ \hline
-			5 & 4.2925 \\ \hline
-			6 & 5.3631 \\ \hline
-			7 & 4.636 \\ \hline
-			8 & 4.9363 \\ \hline
-		\end{tabular}
-
-		\end{table}
-	\end{center}
 \end{frame}
 
 %-------------------------------------------------------
 \subsection{Fine-tuning}
+\begin{frame}{Transfer learning}{}
+	\begin{itemize}
+		\item Re-uses model developed for a specific task/dataset to lead another task with another dataset
+		\item \textbf{Fine-tuning}: retrain a pretrained model
+		\item \textbf{Model Zoo} (Caffe library): people share their network weights.
+	\end{itemize}				
+	\begin{center}
+     \begin{figure}[htbp]
+        \includegraphics[scale=.6]{images/transfer_learning}
+    	\label{figrsexample1}
+	\end{figure}
+  \end{center}
+\end{frame}
+%-------------------------------------------------------
+\begin{frame}{Fine-tuning our model}{}
+	\only<1-3>{	
+	\begin{itemize}
+		\item Train the model on a dataset including the images of $3$ parts of beetles ($5,460$ images)
+		\item Fine-tune pretrained model on pronotum dataset
+	\end{itemize}
+	}
+	\only<2>{				
+	\begin{center}
+     \begin{figure}[htbp]
+        \includegraphics[scale=.45]{images/merge}
+    	\label{figrsexample1}
+	 \end{figure}
+    \end{center}
+    }
+    \only<3>{
+    \begin{center}
+     \begin{figure}[htbp]
+        \includegraphics[scale=.45]{images/merge_rm}
+    	\label{figrsexample1}
+	 \end{figure}
+    \end{center}
+    }
+\end{frame}
+%-------------------------------------------------------
+\section{Results}
+\begin{frame}{Results}{Average distance comparing}
+	\only<1>{
+	The average distances of all images per landmark.
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Landmark} & \textbf{Distance} (in pixels) \\ \hline
+			1 & 2.486  \\ \hline
+			2 & 2.7198 \\ \hline
+			3 & 2.6523 \\ \hline
+			4 & 2.7709 \\ \hline
+			5 & 2.4872 \\ \hline
+			6 & 3.0492 \\ \hline
+			7 & 2.6836 \\ \hline
+			8 & 2.8709 \\ \hline
+		\end{tabular}
+	\end{table}
+	}
+	\only<2>{
+	Comparing the average distances between two processes (training from scratch and fine-tuning).
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{ | c | c | c | c | c | }
+			\hline
+			\multicolumn{1}{|c|}{\multirow{2}{*}{Landmark}} & \multicolumn{2}{c|}{From scratch} &  \multicolumn{2}{c|}{With fine-tuning}  \\ \cline{2-5}
+	 & Average & SD & Average & SD \  \\ \hline
+			\textbf{LM1} & \textbf{4.002} & \textbf{2.5732} & \textbf{2.486} & \textbf{1.5448} \\ \hline
+			LM2 & 4.4831 & 2.7583 & 2.7198 & 1.7822 \\ \hline
+			LM3 & 4.2959 & 2.7067 & 2.6523 & 1.8386 \\ \hline
+			LM4 & 4.3865 & 3.0563 & 2.7709 & 1.9483 \\ \hline
+			LM5 & 4.2925 & 2.9086 & 2.4872 & 1.6235 \\ \hline
+			\textbf{LM6} & \textbf{5.3631} & \textbf{3.4234} & \textbf{3.0492} & \textbf{1.991} \\ \hline
+			LM7 & 4.636 & 2.8426 & 2.6836 & 1.7781 \\ \hline
+			LM8 & 4.9363 & 3.0801 & 2.8709 & 1.9662 \\ \hline
+		\end{tabular}
+	\end{table}
+	}
+\end{frame}
+\begin{frame}{Results}{Distribution of average distances}
+	
+	\begin{itemize}
+		\only<1>{
+		\item The distribution of distance of the best result ($1^{st}$ landmark)
+		\begin{figure}[htbp]
+   				\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.4]{images/lm1_cnn_2}
+        			\caption{Training from scratch}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.38]{images/lm1_finetuning_2}
+        			\caption{With fine-tuning}
+    			\end{subfigure}    		
+			\end{figure}
+			}
+		\only<2>{
+		\item The distribution of distance of the worst result ($6^{th}$ landmark)
+		\begin{figure}[htbp]
+   				\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.4]{images/lm6_cnn_2}
+        			\caption{Training from scratch}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.38]{images/lm6_finetuning_2}
+        			\caption{With fine-tuning}
+    			\end{subfigure}    		
+			\end{figure}
+		}
+	\end{itemize}
+
+\end{frame}
+%-------------------------------------------------------
+\section{Conclusion}
+\begin{frame}{Conclusion}
+%-------------------------------------------------------
+	\begin{block}{Conclusion}
+		\small{
+			\begin{itemize}
+				\item Propose a CNN to predict the landmarks on pronotum images.
+				\item Propose procedure to augment the dataset.
+				\item Apply fine-tuning to improve the quality of predicted landmarks.
+				\item The last of the predicted landmarks leads to satisfying results without a need for segmentation step. It allows replacing manual landmarks.
+			\end{itemize}
+		}
+	\end{block}
+	\pause
+	\begin{block}{Future works}
+		\small{Continue improving the landmarks coordinates by going deeply how to characterize the learning problem to design the right pre-training set.}
+	\end{block}
+\end{frame}
+%-------------------------------------------------------
+
+{\1
+\begin{frame}[plain,noframenumbering]
+  \finalpage{\textbf{\color{red}Thank you for attention!}}
+\end{frame}}
+
+\end{document}
+
+
+
+
+
+
 \begin{frame}{Result}{Statistic on acceptable predicted landmarks}
 Chart shows the propotion of acceptable predicted landmarks
 \footnotesize{
@@ -446,66 +612,4 @@ Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}
 \end{table}
 \footnotetext{\tiny{Cintas, ``Automatic ear detection and feature extraction using
 geometric morphometrics and convolutional neural networks," IET Biometrics, vol. 6, no. 3, pp. 211–223, 2016}}
-\end{frame}
-%-------------------------------------------------------
-\section{Conclusion}
-\begin{frame}{Conclusion}
-%-------------------------------------------------------
-	\begin{block}{Conclusion}
-		\small{
-			\begin{itemize}
-				\item Proposed a CNN to predict the landmarks on pronotum images.
-				\item Proposed procedure to augment the dataset.
-				\item The location of the predicted landmarks are acceptable with high accuracy ($ \sim75\%$). It allows to replace manual landmarks.
-			\end{itemize}
-		}
-	\end{block}
-	\pause
-	\begin{block}{Future works}
-		\small{Continue improving the landmarks coordinates by continuing on deep learning, \textit{for example}, using transfer learning.}
-	\end{block}
-\end{frame}
-%-------------------------------------------------------
-
-{\1
-\begin{frame}[plain,noframenumbering]
-  \finalpage{Thank you for attention!}
-\end{frame}}
-
-\end{document}
-
-
-
-
-
-\begin{frame}{Network architecture}
-  \begin{columns}
-		\begin{column}{0.4\textwidth}
-			The first model includes: 
-			\small{
-			\begin{itemize}
-				\item An gray-scale input,
-    			\item $3$ CNN layers (C1, C2, C3),
-    			\item $3$ POOLING layers (P1,P2,P3),
-    			\item $3$ FC layers.
-  			\end{itemize}}
-  			Problems:
-  			\small{
-  			\begin{itemize}
-  				\item Output is not good enough,
-  				\item Overfitting.
-  			\end{itemize}
-  			}
-		\end{column}
-		\begin{column}{0.6\textwidth}  %%<--- here
-    		\begin{center}
-     			\begin{figure}[htbp]
-        			\centering
-        			\includegraphics[scale=.4]{images/architecture1}
-        			%\caption{\footnotesize{Pronotum}}
-    				\label{figrsexample1}
-				\end{figure}
-     		\end{center}
-		\end{column}
-	\end{columns}~\\
 \end{frame}
