@@ -232,7 +232,7 @@
 	\end{itemize}
 	\begin{figure}[htbp]
   		\centering
-   	 	\includegraphics[scale=.35]{images/convarc.eps}
+   	 	\includegraphics[scale=.27]{images/arch_cnn}
    	 	%\caption{\footnotesize{An example of CNN}}
 	\end{figure}
 	\footnotetext{
@@ -340,15 +340,15 @@ and applications in vision", 2010.
 %-------------------------------------------------------
 \begin{frame}{Training}{}
 	\begin{itemize}
-		\item Model: the third model in $5,000$ epochs\footnotemark
+		\item Training parameters: momentum ($0.9 \rightarrow 0.9999$), learing rate ($0.03 \rightarrow 0.00001$), $5,000$ epochs\footnotemark
 		\item Training dataset: $1,820$ images ($260 \times 7$)
-		\item Images shows training and validation losses of the models.\\ \small{{\color{blue}Blue} curves are training losses, {\color{green}green} curves are validation losses.}
+		\item Images shows training and validation losses of the models.\\ \small{\color{blue}{Blue} curves are training losses, \color{green}{green} curves are validation losses.}
 		\item Training time: 3 hours using NVIDIA TITAN X card.
 	\end{itemize}
 	\begin{center}
      \begin{figure}[htbp]
         \centering
-        \includegraphics[scale=.31]{images/loss_model_3}
+        \includegraphics[scale=.30]{images/loss_model_3}
        	%\caption{\footnotesize{Pronotum}}
     	\label{figrsexample1}
 	\end{figure}
@@ -481,14 +481,15 @@ and applications in vision", 2010.
 		\centering
 		\begin{tabular}{ | c | c | c | c | c | }
 			\hline
+	
 			\multicolumn{1}{|c|}{\multirow{2}{*}{Landmark}} & \multicolumn{2}{c|}{From scratch} &  \multicolumn{2}{c|}{With fine-tuning}  \\ \cline{2-5}
 	 & Average & SD & Average & SD \  \\ \hline
-			\textbf{LM1} & \textbf{4.002} & \textbf{2.5732} & \textbf{2.486} & \textbf{1.5448} \\ \hline
+			\color{green}{\textbf{LM1}} & \color{green}{\textbf{4.002}} & \color{green}{\textbf{2.5732}} & \color{green}{\textbf{2.486}} & \color{green}{\textbf{1.5448}} \\ \hline
 			LM2 & 4.4831 & 2.7583 & 2.7198 & 1.7822 \\ \hline
 			LM3 & 4.2959 & 2.7067 & 2.6523 & 1.8386 \\ \hline
 			LM4 & 4.3865 & 3.0563 & 2.7709 & 1.9483 \\ \hline
 			LM5 & 4.2925 & 2.9086 & 2.4872 & 1.6235 \\ \hline
-			\textbf{LM6} & \textbf{5.3631} & \textbf{3.4234} & \textbf{3.0492} & \textbf{1.991} \\ \hline
+			\color{green}{\textbf{LM6}} & \color{green}{\textbf{5.3631}} & \color{green}{\textbf{3.4234}} & \color{green}{\textbf{3.0492}} & \color{green}{\textbf{1.991}} \\ \hline
 			LM7 & 4.636 & 2.8426 & 2.6836 & 1.7781 \\ \hline
 			LM8 & 4.9363 & 3.0801 & 2.8709 & 1.9662 \\ \hline
 		\end{tabular}
