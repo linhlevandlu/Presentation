@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[10pt,svgnames]{beamer}
 \usetheme[
 %%% option passed to the outer theme
 %    progressstyle=fixedCircCnt,   % fixedCircCnt, movingCircCnt (moving is deault)
@@ -21,7 +21,6 @@
 %-------------------------------------------------------
 % INCLUDE PACKAGES
 %-------------------------------------------------------
-
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
@@ -29,7 +28,6 @@
 \usepackage[justification=centering]{caption}
 \usepackage{subcaption}
 \usepackage{multirow}
-
 %-------------------------------------------------------
 % DEFFINING AND REDEFINING COMMANDS
 %-------------------------------------------------------
@@ -129,38 +127,25 @@
      			\begin{figure}[htbp]
         			\centering
         			\includegraphics[scale=1]{images/pronotum}
-        			%\caption{\footnotesize{Pronotum}}
+        			%\caption{\footnotesize{Pronotum part}}
     				\label{figrsexample1}
 				\end{figure}
      		\end{center}
 		\end{column}
-	\end{columns}~\\
+	\end{columns}
 	\begin{figure}[htbp]
-   				\begin{subfigure}[t]{0.22\textwidth}
-        			\centering
-        			\includegraphics[scale=.13]{images/mgmo}
-        			\caption{\footnotesize{Left mandible}}
-        			\label{figsub11}
-    			\end{subfigure}%
-    			~ 
+   				 
     			\begin{subfigure}[t]{0.22\textwidth}
         			\centering
-        			\includegraphics[scale=.13]{images/mdmo}
-        			\caption{\footnotesize{Right mandible}}
+        			\includegraphics[scale=.18]{images/elytre2}
+        			\caption{\footnotesize{Body part}}
         			\label{figsub22}
     			\end{subfigure}
     			~ 
     			\begin{subfigure}[t]{0.22\textwidth}
         			\centering
-        			\includegraphics[scale=.16]{images/elytre2}
-        			\caption{\footnotesize{Body}}
-        			\label{figsub22}
-    			\end{subfigure}
-    			~ 
-    			\begin{subfigure}[t]{0.22\textwidth}
-        			\centering
-        			\includegraphics[scale=.16]{images/tete2}
-        			\caption{\footnotesize{Head}}
+        			\includegraphics[scale=.18]{images/tete2}
+        			\caption{\footnotesize{Head part}}
         			\label{figsub22}
     			\end{subfigure}
 			\end{figure}
@@ -170,11 +155,15 @@
 
 \begin{frame}{Problems}{}
 %-------------------------------------------------------
-  
-	\small{Un-segmentable images: }
+	Pronotum image:
+  	\begin{itemize}
+  		\item Very noise: it connects to a part of head and body
+  		\item Difficult to segment the object
+  		\item The landmarks stay both on the shape and inside the object
+  	\end{itemize}
   \begin{figure}[htbp]
         \centering
-        \only<1-3>{
+        \only<1,3>{
         \includegraphics[scale=.055]{images/prono_003}
         }
         \only<3>{
@@ -182,13 +171,13 @@
         }
         \only<2-3>
         {
-        	\only<2>{\hspace{3cm}}
+        	\only<2>{\hspace{0cm}}
          \includegraphics[scale=.055]{images/prono_003_lm}
          }
 	\end{figure}
 	\only<3>{
 	\begin{center}	
-		\textbf{\color{red}How to predict the landmarks coordinates?}	
+		\textbf{How to {\color{red}automatically} predict the {\color{red}landmarks coordinates} on {\color{red}pronotum} images?}	
 	\end{center}
 	}
 \end{frame}
@@ -205,7 +194,7 @@
 	\only<1-2>{
 	\begin{block}{Definition\footnotemark[1]}
 		\begin{itemize}
-			\item A class of machine learning,
+			\item A class of machine learning methods,
 			\item Use a cascade of multiple layers for feature extraction and transformation,
 			\item Learn multiple levels of representation in supervised or unsupervised.
 		\end{itemize}
@@ -224,11 +213,11 @@
 %-------------------------------------------------------
 \subsection{Convolutional neural networks (CNNs)}
 %-------------------------------------------------------
-\begin{frame}{CNNs}
+\begin{frame}{Convolutional neural networks}
 	\begin{itemize}
 		\item Consists an input, an output and multiple hidden layers\footnotemark[1]
 		\item Arranges the data in $3$ dimensions: \textit{width, height and depth}
-		\item Classical layers: convolutional layers (\textbf{CONV}), pooling layers (\textbf{POOLING}), dropout layers (\textbf{DROPOUT}), full-connected layers (\textbf{FC}), \ldots
+		\item Classical layers: convolutional layers (\textbf{\color{orange}CONV}), pooling layers (\textbf{\color{yellow}POOLING}), dropout layers (\textbf{\color{green}DROPOUT}), full-connected layers (\textbf{\color{blue}FC}), \ldots
 	\end{itemize}
 	\begin{figure}[htbp]
   		\centering
@@ -247,16 +236,16 @@ and applications in vision", 2010.
 \subsection{Network architectures}
 %-------------------------------------------------------
 %-------------------------------------------------------
-\begin{frame}{Network architecture}{}
+\begin{frame}{Our proposed architecture}{}
   \begin{columns}
 		\begin{column}{0.45\textwidth}	
 			\only<1>{
 			Elementary block: 
 			\small{
 			\begin{itemize}
-				\item A CONV layer,
-    			\item A maxixum POOLING layer,
-    			\item A DROPOUT layer
+				\item A {\color{orange}CONV} layer,
+    			\item A {\color{yellow}maxixum POOLING} layer,
+    			\item A {\color{green}DROPOUT} layer
   			\end{itemize}}  			
   			}			 			
 		\end{column}
@@ -272,9 +261,13 @@ and applications in vision", 2010.
      		\end{center}	
      		}					     		
 		\end{column}
-	\end{columns}~\\
-	\only<2>{			
-		The proposed model: 
+	\end{columns}~\\		
+		
+\end{frame}
+
+%-------------------------------------------------------
+\begin{frame}{Our proposed architecture}
+	The proposed model: 
 		\small{
 			\begin{itemize}
 				\item \textbf{Three} elementary blocks,
@@ -288,22 +281,20 @@ and applications in vision", 2010.
         			\includegraphics[scale=.2]{images/arch_model}
 				\end{figure}
      		\end{center}
-     		
-		}
 \end{frame}
 %-------------------------------------------------------
 \subsection{Data augmentation}
 %-------------------------------------------------------
 \begin{frame}{Data augmentation}{}
-	\only<1,4>{Dataset: $293$ pronotum images in RGB format.\\}
-	\only<2-4>{Augmentation methods:
+	\only<1-3>{Dataset: {\color{red}$293$ pronotum}  images in {\color{red}R}{\color{green}G}{\color{blue}B} format.\\}
+	\only<1-3>{Augmentation methods:
 	\begin{itemize}
-		\only<2,4>{\item Increase the value of each channel,}
-		\only<3,4>{\item Split the channels.}
+		\only<1,3>{\item Increase the value of each channel,}
+		\only<2>{\item Split the channels.}
 	\end{itemize}
 	}
-	\only<4>{Total: $293 \times 7 = 2,051$ images}
-\only<2>{
+	\only<3>{Total: $293 \times 7 = 2,051$ images}
+\only<1>{
   \begin{center}
      \begin{figure}[htbp]
         \centering
@@ -313,7 +304,7 @@ and applications in vision", 2010.
 	\end{figure}
   \end{center}
   }
- \only<3>{
+ \only<2>{
   \begin{center}
      \begin{figure}[htbp]
         \centering
@@ -323,7 +314,7 @@ and applications in vision", 2010.
 	\end{figure}
   \end{center}
   }
-  \only<4>{
+  \only<3>{
   \begin{center}
      \begin{figure}[htbp]
         \centering
@@ -340,7 +331,8 @@ and applications in vision", 2010.
 %-------------------------------------------------------
 \begin{frame}{Training}{}
 	\begin{itemize}
-		\item Training dataset: $1,820$ images ($260 \times 7$)
+		\item Training dataset: \textbf{$1,820$} images ($260 \times 7$)
+		\item Apply the cross-validation to select the tranining data
 		\item Training parameters: momentum ($0.9 \rightarrow 0.9999$), learning rate ($0.03 \rightarrow 0.00001$), $5000$ epochs\footnotemark
 		\item Image shows training and validation losses of the model.\\ \small{\color{blue}{Blue} curve is training loss, \color{green}{green} curve is validation loss.}
 		\item Training time: 3 hours using NVIDIA TITAN X card.
@@ -357,15 +349,20 @@ and applications in vision", 2010.
 	\footnotetext{\tiny{An epoch is a single pass through the full training set.}}
 \end{frame}
 
-%-------------------------------------------------------
-
-\begin{frame}{First result}{Landmarks on images}
-%-------------------------------------------------------
-\begin{itemize}
-		\item Run the trained model to predict the landmarks on testing images,
-		\item Calculate the distance between predicted landmarks and corresponding manual landmarks,		
-	\end{itemize}
-			\begin{figure}[htbp]
+\begin{frame}{First result}{Correlation metrics and landmarks on the images}
+	\begin{itemize}
+		\item Quality metrics: coefficient of determination ($r^2$), explained variance (EV), Pearson correlation.
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{|c|p{1cm}|p{1cm}|p{1.5cm}|}
+					\hline
+					Metric & $\mathbf{r^{2}}$ & \textbf{EV} & \textbf{Pearson} \\ \hline
+					Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}$ \\ \hline
+				\end{tabular}
+			\end{table}~\\
+	\pause
+	\item Display the landmarks on the images:
+	\begin{figure}[htbp]
    				\begin{subfigure}[t]{0.5\textwidth}
         			\centering
         			\includegraphics[scale=.135]{images/plandmark}
@@ -378,38 +375,33 @@ and applications in vision", 2010.
         			\includegraphics[scale=.2]{images/plandmark2}
         			\caption{ }
         			\label{figsub22}
-    			\end{subfigure}    		
-    			%\caption{\scriptsize{Training and validation losses of models. Blue curves are training losses, green curves are validation losses.}}	
-			\end{figure}
+    			\end{subfigure} 
+    		\end{figure}
+   	\end{itemize}
 \end{frame}
+
+
 %-------------------------------------------------------
-\begin{frame}{First result}{Correlation metrics and average distances}
-	\begin{itemize}
-		\item Quality metrics: coefficient of determination ($r^2$), explained variance (EV), Pearson correlation.
-			\begin{table}[htbp]
-				\centering
-				\begin{tabular}{|c|p{1cm}|p{1cm}|p{1.5cm}|}
-					\hline
-					Metric & $\mathbf{r^{2}}$ & \textbf{EV} & \textbf{Pearson} \\ \hline
-					Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}$ \\ \hline
-				\end{tabular}
-			\end{table}
-		\pause
-		\item The average distances of all images per landmark.
+\begin{frame}{First result}{Average distances}
+	\begin{itemize}			
+		\item Calculate the distance between predicted landmarks and corresponding manual landmarks.	
+		\item Compute the average distance by landmark.\\
+		
 			\begin{table}[htbp]
 				\centering
 				\begin{tabular}{|c|c|}
 					\hline
 					\textbf{Landmark} & \textbf{Distance} (in pixels) \\ \hline
-					1 & 4.002  \\ \hline
+					\textbf{\color{green}1} & \textbf{\color{green}4.002}  \\ \hline
 					2 & 4.4831 \\ \hline
 					3 & 4.2959 \\ \hline
 					4 & 4.3865 \\ \hline
 					5 & 4.2925 \\ \hline
-					6 & 5.3631 \\ \hline
+					\textbf{\color{red}6} & \textbf{\color{red}5.3631} \\ \hline
 					7 & 4.636 \\ \hline
 					8 & 4.9363 \\ \hline
 				\end{tabular}
+				\caption*{The statistic of average distances on all images per landmark.}
 			\end{table}
 	\end{itemize}
 \end{frame}
@@ -431,24 +423,25 @@ and applications in vision", 2010.
 \end{frame}
 %-------------------------------------------------------
 \begin{frame}{Fine-tuning our model}{}
-	\only<1-3>{	
+	\only<1-2>{	
 	\begin{itemize}
-		\item Train the model on a dataset including the images of $3$ parts of beetles ($5,460$ images)
+		\item Fine-tuning pronotum images on \textbf{VGG-16, VGG-19, ResNet50} is not precise
+		\item Train the model on a dataset including the images of $3$ parts of beetles \only<2>{\textbf{($5,460$ images)}}
 		\item Fine-tune pretrained model on pronotum dataset
 	\end{itemize}
 	}
-	\only<2>{				
+	\only<1>{				
 	\begin{center}
      \begin{figure}[htbp]
-        \includegraphics[scale=.45]{images/merge}
+        \includegraphics[scale=.4]{images/merge}
     	\label{figrsexample1}
 	 \end{figure}
     \end{center}
     }
-    \only<3>{
+    \only<2>{
     \begin{center}
      \begin{figure}[htbp]
-        \includegraphics[scale=.45]{images/merge_rm}
+        \includegraphics[scale=.4]{images/merge_rm}
     	\label{figrsexample1}
 	 \end{figure}
     \end{center}
@@ -456,26 +449,8 @@ and applications in vision", 2010.
 \end{frame}
 %-------------------------------------------------------
 \section{Results}
-\begin{frame}{Results}{Average distance comparing}
-	\only<1>{
-	The average distances of all images per landmark.
-	\begin{table}[htbp]
-		\centering
-		\begin{tabular}{|c|c|}
-			\hline
-			\textbf{Landmark} & \textbf{Distance} (in pixels) \\ \hline
-			1 & 2.486  \\ \hline
-			2 & 2.7198 \\ \hline
-			3 & 2.6523 \\ \hline
-			4 & 2.7709 \\ \hline
-			5 & 2.4872 \\ \hline
-			6 & 3.0492 \\ \hline
-			7 & 2.6836 \\ \hline
-			8 & 2.8709 \\ \hline
-		\end{tabular}
-	\end{table}
-	}
-	\only<2>{
+\begin{frame}{Results}{A comparation of average distances}
+	
 	Comparing the average distances between two processes (training from scratch and fine-tuning).
 	\begin{table}[htbp]
 		\centering
@@ -489,12 +464,12 @@ and applications in vision", 2010.
 			LM3 & 4.2959 & 2.7067 & 2.6523 & 1.8386 \\ \hline
 			LM4 & 4.3865 & 3.0563 & 2.7709 & 1.9483 \\ \hline
 			LM5 & 4.2925 & 2.9086 & 2.4872 & 1.6235 \\ \hline
-			\color{green}{\textbf{LM6}} & \color{green}{\textbf{5.3631}} & \color{green}{\textbf{3.4234}} & \color{green}{\textbf{3.0492}} & \color{green}{\textbf{1.991}} \\ \hline
+			\color{red}{\textbf{LM6}} & \color{red}{\textbf{5.3631}} & \color{red}{\textbf{3.4234}} & \color{red}{\textbf{3.0492}} & \color{red}{\textbf{1.991}} \\ \hline
 			LM7 & 4.636 & 2.8426 & 2.6836 & 1.7781 \\ \hline
 			LM8 & 4.9363 & 3.0801 & 2.8709 & 1.9662 \\ \hline
 		\end{tabular}
 	\end{table}
-	}
+	
 \end{frame}
 \begin{frame}{Results}{Distribution of average distances}
 	
@@ -614,3 +589,40 @@ Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}
 \footnotetext{\tiny{Cintas, ``Automatic ear detection and feature extraction using
 geometric morphometrics and convolutional neural networks," IET Biometrics, vol. 6, no. 3, pp. 211–223, 2016}}
 \end{frame}
+
+\begin{subfigure}[t]{0.22\textwidth}
+        			\centering
+        			\includegraphics[scale=.13]{images/mgmo}
+        			\caption{\footnotesize{Left mandible}}
+        			\label{figsub11}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.22\textwidth}
+        			\centering
+        			\includegraphics[scale=.13]{images/mdmo}
+        			\caption{\footnotesize{Right mandible}}
+        			\label{figsub22}
+    			\end{subfigure}
+
+\begin{frame}{First result}{Landmarks on images}
+%-------------------------------------------------------
+\begin{itemize}
+		\item Run the trained model to predict the landmarks on testing images,
+		\item Calculate the distance between predicted landmarks and corresponding manual landmarks,		
+	\end{itemize}
+			\begin{figure}[htbp]
+   				\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.135]{images/plandmark}
+        			\caption{ }
+        			\label{figsub11}
+    			\end{subfigure}%
+    			~ 
+    			\begin{subfigure}[t]{0.5\textwidth}
+        			\centering
+        			\includegraphics[scale=.2]{images/plandmark2}
+        			\caption{ }
+        			\label{figsub22}
+    			\end{subfigure}    		    			
+			\end{figure}
+\end{frame}    			
