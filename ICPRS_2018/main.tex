@@ -163,19 +163,22 @@
   	\end{itemize}
   \begin{figure}[htbp]
         \centering
-        \only<1,3>{
+        \only<1>{
+        \includegraphics[scale=.055]{images/prono_003_lm2}
+        }
+        \only<2>{
         \includegraphics[scale=.055]{images/prono_003}
         }
-        \only<3>{
+        \only<2>{
         \includegraphics[scale=.03]{images/arrow}
         }
-        \only<2-3>
+        \only<2>
         {
         	\only<2>{\hspace{0cm}}
          \includegraphics[scale=.055]{images/prono_003_lm}
          }
 	\end{figure}
-	\only<3>{
+	\only<2>{
 	\begin{center}	
 		\textbf{How to {\color{red}automatically} predict the {\color{red}landmarks coordinates} on {\color{red}pronotum} images?}	
 	\end{center}
@@ -236,21 +239,31 @@ and applications in vision", 2010.
 \subsection{Network architectures}
 %-------------------------------------------------------
 %-------------------------------------------------------
-\begin{frame}{Our proposed architecture}{}
+\begin{frame}{Our proposed architecture}{Elementary block}
   \begin{columns}
 		\begin{column}{0.45\textwidth}	
-			\only<1>{
+			
 			Elementary block: 
 			\small{
 			\begin{itemize}
-				\item A {\color{orange}CONV} layer,
-    			\item A {\color{yellow}maxixum POOLING} layer,
-    			\item A {\color{green}DROPOUT} layer
-  			\end{itemize}}  			
+				\only<1,2>{\item A \textbf{\color{orange}CONV} layer,
+    			\item A \textbf{\color{yellow}maxixum POOLING} layer,}
+    			\only<2>{\item A \textbf{\color{green}DROPOUT} layer}
+  			\end{itemize}  			
   			}			 			
 		\end{column}
 		\begin{column}{0.55\textwidth}  %%<--- here
 			\only<1>{
+			\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=.28]{images/elementary_block_1}
+        			%\caption{\footnotesize{Pronotum}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}	
+     		}		
+     		\only<2>{
 			\begin{center}
      			\begin{figure}[htbp]
         			\centering
@@ -259,14 +272,14 @@ and applications in vision", 2010.
     				\label{figrsexample1}
 				\end{figure}
      		\end{center}	
-     		}					     		
+     		}				     		
 		\end{column}
 	\end{columns}~\\		
 		
 \end{frame}
 
 %-------------------------------------------------------
-\begin{frame}{Our proposed architecture}
+\begin{frame}{Our proposed architecture}{Elementary blocks composition}
 	The proposed model: 
 		\small{
 			\begin{itemize}
@@ -290,7 +303,7 @@ and applications in vision", 2010.
 	\only<1-3>{Augmentation methods:
 	\begin{itemize}
 		\only<1,3>{\item Increase the value of each channel,}
-		\only<2>{\item Split the channels.}
+		\only<2,3>{\item Split the channels.}
 	\end{itemize}
 	}
 	\only<3>{Total: $293 \times 7 = 2,051$ images}
@@ -327,6 +340,7 @@ and applications in vision", 2010.
 
 \end{frame}
 %-------------------------------------------------------
+\section{Results}
 \subsection{Training from scratch}
 %-------------------------------------------------------
 \begin{frame}{Training}{}
@@ -382,6 +396,7 @@ and applications in vision", 2010.
 
 
 %-------------------------------------------------------
+
 \begin{frame}{First result}{Average distances}
 	\begin{itemize}			
 		\item Calculate the distance between predicted landmarks and corresponding manual landmarks.	
@@ -426,7 +441,7 @@ and applications in vision", 2010.
 	\only<1-2>{	
 	\begin{itemize}
 		\item Fine-tuning pronotum images on \textbf{VGG-16, VGG-19, ResNet50} is not precise
-		\item Train the model on a dataset including the images of $3$ parts of beetles \only<2>{\textbf{($5,460$ images)}}
+		\item Train the model on a dataset including the images of $3$ parts of beetles \only<2>{\textbf{($5,460$ images)}}: head, body and pronotum parts
 		\item Fine-tune pretrained model on pronotum dataset
 	\end{itemize}
 	}
@@ -448,7 +463,7 @@ and applications in vision", 2010.
     }
 \end{frame}
 %-------------------------------------------------------
-\section{Results}
+
 \begin{frame}{Results}{A comparation of average distances}
 	
 	Comparing the average distances between two processes (training from scratch and fine-tuning).
@@ -519,13 +534,18 @@ and applications in vision", 2010.
 				\item Propose a CNN to predict the landmarks on pronotum images.
 				\item Propose procedure to augment the dataset.
 				\item Apply fine-tuning to improve the quality of predicted landmarks.
-				\item The last of the predicted landmarks leads to satisfying results without a need for segmentation step. It allows replacing manual landmarks.
+				\item The predicted landmarks able to replace the manual landmarks without segmentation step.
 			\end{itemize}
 		}
 	\end{block}
 	\pause
 	\begin{block}{Future works}
-		\small{Continue improving the landmarks coordinates by going deeply how to characterize the learning problem to design the right pre-training set.}
+		\small{
+			\begin{itemize}
+				\item Applying the method on body and head parts 
+				\item Going deeply how to design the right pre-training set
+			\end{itemize}					
+			}
 	\end{block}
 \end{frame}
 %-------------------------------------------------------
