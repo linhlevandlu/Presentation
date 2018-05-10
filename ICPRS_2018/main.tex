@@ -346,7 +346,7 @@ and applications in vision", 2010.
 \begin{frame}{Training}{}
 	\begin{itemize}
 		\item Training dataset: \textbf{$1,820$} images ($260 \times 7$)
-		\item Apply the cross-validation to select the tranining data
+		\item Apply the cross-validation to select training and testing data
 		\item Training parameters: momentum ($0.9 \rightarrow 0.9999$), learning rate ($0.03 \rightarrow 0.00001$), $5000$ epochs\footnotemark
 		\item Image shows training and validation losses of the model.\\ \small{\color{blue}{Blue} curve is training loss, \color{green}{green} curve is validation loss.}
 		\item Training time: 3 hours using NVIDIA TITAN X card.
@@ -441,7 +441,7 @@ and applications in vision", 2010.
 	\only<1-2>{	
 	\begin{itemize}
 		\item Fine-tuning pronotum images on \textbf{VGG-16, VGG-19, ResNet50} is not precise
-		\item Train the model on a dataset including the images of $3$ parts of beetles \only<2>{\textbf{($5,460$ images)}}: head, body and pronotum parts
+		\item Train the model on a dataset including the images of $3$ parts of beetles: head, body and pronotum parts \only<2>{\textbf{($5,460$ images)}}
 		\item Fine-tune pretrained model on pronotum dataset
 	\end{itemize}
 	}
