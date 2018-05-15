@@ -30,6 +30,11 @@
 \usepackage{multirow}
 %-------------------------------------------------------
 % DEFFINING AND REDEFINING COMMANDS
+
+\definecolor{conv}{RGB}{255, 102, 0.0}
+\definecolor{pool}{RGB}{255, 210, 0}
+\definecolor{drop}{RGB}{153, 255, 102}
+\definecolor{citem}{RGB}{15, 88, 11}
 %-------------------------------------------------------
 
 % colored hyperlinks
@@ -146,36 +151,39 @@
 
 %-------------------------------------------------------
 
-\begin{frame}{Problems}{}
+\begin{frame}{Goals}{}
 %-------------------------------------------------------
-	Pronotum image:
-  	\begin{itemize}
-  		\item Very noise: it connects to a part of head and body
-  		\item Difficult to segment the object
-  		\item The landmarks stay both on the shape and inside the object
-  	\end{itemize}
-  \begin{figure}[htbp]
-        \centering
-        \only<1>{
-        \includegraphics[scale=.055]{images/prono_003_lm2}
-        }
-        \only<2>{
-        \includegraphics[scale=.055]{images/prono_003}
-        }
-        \only<2>{
-        \includegraphics[scale=.03]{images/arrow}
-        }
-        \only<2>
-        {
-        	\only<2>{\hspace{0cm}}
-         \includegraphics[scale=.055]{images/prono_003_lm}
-         }
-	\end{figure}
-	\only<2>{
+	\begin{block}{Manual landmarks}		
+		\begin{itemize}
+	  				\item Time-consuming
+					\item Difficult to pre-procedure
+  				\end{itemize}
+	\end{block}
+	
+	\begin{block}{Problems}
+		\begin{columns}
+			\begin{column}{0.65\textwidth}
+				Pronotum image:
+				\begin{itemize}
+  					\item Not precised: contains also a part of head and body
+		  			\item Difficult to segment this object
+  					\item The landmarks are set both on the shape and inside the object
+  				\end{itemize}
+			\end{column}
+			\begin{column}{0.3\textwidth}
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[scale=.040]{images/prono_003_lm2}
+				\end{figure}
+			\end{column}
+		\end{columns}		
+	\end{block}
 	\begin{center}	
 		\textbf{How to {\color{red}automatically} predict the {\color{red}landmarks coordinates} on {\color{red}pronotum} images?}	
 	\end{center}
-	}
+  	
+  
+	
 \end{frame}
 
 %-------------------------------------------------------
@@ -197,7 +205,7 @@
 	\end{block}{\footnotetext[1]{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, “Deep learning,” Nature, vol. 521, no. 7553, pp. 436–444, 2015}}}
 	}
 	\only<2>{
-	\begin{block}{Applications\footnotemark[1]}
+	\begin{block}{Applications}
 		\begin{itemize}
 			\item Computer vision (image recognition and classification)
 			\item Speech recognition
@@ -213,7 +221,7 @@
 	\begin{itemize}
 		\item Consists an input, an output and multiple hidden layers\footnotemark[1]
 		\item Arranges the data in $3$ dimensions: \textit{width, height and depth}
-		\item Classical layers: convolutional layers (\textbf{\color{orange}CONV}), pooling layers (\textbf{\color{yellow}POOLING}), dropout layers (\textbf{\color{green}DROPOUT}), full-connected layers (\textbf{\color{blue}FC}), \ldots
+		\item Classical layers: \textbf{\color{conv}convolutional} layers, \textbf{\color{pool}pooling} layers, \textbf{\color{drop}dropout} layers, \textbf{\color{blue}full-connected} layers, \ldots
 	\end{itemize}
 	\begin{figure}[htbp]
   		\centering
@@ -236,12 +244,12 @@ and applications in vision", 2010.
   \begin{columns}
 		\begin{column}{0.45\textwidth}	
 			
-			Elementary block: 
+			\textbf{\color{red}Elementary block}: 
 			\small{
 			\begin{itemize}
-				\only<1,2>{\item A \textbf{\color{orange}CONV} layer,
-    			\item A \textbf{\color{yellow}maxixum POOLING} layer,}
-    			\only<2>{\item A \textbf{\color{green}DROPOUT} layer}
+				\only<1,2>{\item A \textbf{\color{conv}convolutional} layer,
+    			\item A \textbf{\color{pool}maxixum pooling} layer,}
+    			\only<2>{\item A \textbf{\color{drop}dropout} layer}
   			\end{itemize}  			
   			}			 			
 		\end{column}
@@ -276,8 +284,8 @@ and applications in vision", 2010.
 	The proposed model: 
 		\small{
 			\begin{itemize}
-				\item \textbf{Three} elementary blocks,
-    			\item \textbf{Three} full-connected (FC) layers
+				\item \textbf{Three} \textbf{\color{red}elementary blocks},
+    			\item \textbf{Three} {\color{blue}full-connected} (FC) layers
     			\item A dropout layer was inserted between the first of two FCs
   			\end{itemize}}
   		
@@ -341,7 +349,7 @@ and applications in vision", 2010.
 		\item Training dataset: \textbf{$1,820$} images ($260 \times 7$)
 		\item Apply the cross-validation to select training and testing data
 		\item Training parameters: momentum ($0.9 \rightarrow 0.9999$), learning rate ($0.03 \rightarrow 0.00001$), $5000$ epochs\footnotemark
-		\item Image shows training and validation losses of the model.\\ \small{\color{blue}{Blue} curve is training loss, \color{green}{green} curve is validation loss.}
+		\item Image shows training and validation losses of the model.
 		\item Training time: 3 hours using NVIDIA TITAN X card.
 	\end{itemize}
 	\begin{center}
@@ -433,8 +441,8 @@ and applications in vision", 2010.
 \begin{frame}{Fine-tuning our model}{}
 	\only<1-2>{	
 	\begin{itemize}
-		\item Fine-tuning pronotum images on \textbf{VGG-16, VGG-19, ResNet50} is not precise
-		\item Train the model on a dataset including the images of $3$ parts of beetles: head, body and pronotum parts \only<2>{\textbf{($5,460$ images)}}
+		\item Estimated landmarks on pronotum images when fine-tuning on \textbf{VGG-16, VGG-19, ResNet50} has not been improved
+		\item Train the model on a dataset including the images of $3$ parts of beetles: head, body and pronotum parts \textbf{($5,460$ images)}
 		\item Fine-tune pretrained model on pronotum dataset
 	\end{itemize}
 	}
@@ -458,13 +466,13 @@ and applications in vision", 2010.
 
 \begin{frame}{Results}{A comparation of average distances}
 	
-	Comparing the average distances between two processes (training from scratch and fine-tuning).
+	Comparing the average distances between two processes: training from scratch and fine-tuning.
 	\begin{table}[htbp]
 		\centering
 		\begin{tabular}{ | c | c | c | c | c | }
 			\hline
 	
-			\multicolumn{1}{|c|}{\multirow{2}{*}{Landmark}} & \multicolumn{2}{c|}{From scratch} &  \multicolumn{2}{c|}{With fine-tuning}  \\ \cline{2-5}
+			\multicolumn{1}{|c|}{\multirow{2}{*}{Landmarks}} & \multicolumn{2}{c|}{From scratch} &  \multicolumn{2}{c|}{With fine-tuning}  \\ \cline{2-5}
 	 & Average & SD & Average & SD \  \\ \hline
 			\color{green}{\textbf{LM1}} & \color{green}{\textbf{4.002}} & \color{green}{\textbf{2.5732}} & \color{green}{\textbf{2.486}} & \color{green}{\textbf{1.5448}} \\ \hline
 			LM2 & 4.4831 & 2.7583 & 2.7198 & 1.7822 \\ \hline
@@ -523,10 +531,10 @@ and applications in vision", 2010.
 	\begin{block}{Conclusion}
 		\small{
 			\begin{itemize}
-				\item Propose a CNN to predict the landmarks on pronotum images.
-				\item Propose procedure to augment the dataset.
+				\item Propose a new CNN architecture with elementary blocks to predict the landmarks on pronotum images.
+				\item Propose a new procedure to augment the dataset.
 				\item Apply fine-tuning to improve the quality of predicted landmarks.
-				\item The predicted landmarks able to replace the manual landmarks without segmentation step.
+				\item[\textcolor{citem}{$\bullet$}] The predicted landmarks able to replace the manual landmarks without segmentation step.
 			\end{itemize}
 		}
 	\end{block}
@@ -535,7 +543,7 @@ and applications in vision", 2010.
 		\small{
 			\begin{itemize}
 				\item Applying the method on body and head parts 
-				\item Going deeply how to design the right pre-training set
+				\item Going deeply how to design the right pre-training model
 			\end{itemize}					
 			}
 	\end{block}
@@ -676,4 +684,35 @@ geometric morphometrics and convolutional neural networks," IET Biometrics, vol.
         			\label{figsub22}
     			\end{subfigure}
     			
+\end{frame}
+\begin{frame}{Problems}{}
+%-------------------------------------------------------
+	Pronotum image:
+  	\begin{itemize}
+  		\item Very noise: it connects to a part of head and body
+  		\item Difficult to segment the object
+  		\item The landmarks stay both on the shape and inside the object
+  	\end{itemize}
+  \begin{figure}[htbp]
+        \centering
+        \only<1>{
+        \includegraphics[scale=.055]{images/prono_003_lm2}
+        }
+        \only<2>{
+        \includegraphics[scale=.055]{images/prono_003}
+        }
+        \only<2>{
+        \includegraphics[scale=.03]{images/arrow}
+        }
+        \only<2>
+        {
+        	\only<2>{\hspace{0cm}}
+         \includegraphics[scale=.055]{images/prono_003_lm}
+         }
+	\end{figure}
+	\only<2>{
+	\begin{center}	
+		\textbf{How to {\color{red}automatically} predict the {\color{red}landmarks coordinates} on {\color{red}pronotum} images?}	
+	\end{center}
+	}
 \end{frame}
