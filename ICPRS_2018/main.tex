@@ -91,7 +91,7 @@
 \begin{block}{Morphometry analysis}
   \begin{itemize}    
     \item Used to study the complex interaction between the evolution of insect and environmental factors.
-    \item Characterize the common information of biological shape, such as, shape, sizes, or \textbf{landmarks},\ldots.
+    \item Characterize information of biological species such as, shape, sizes, or \textbf{landmarks},\ldots.
   \end{itemize}
   \end{block}
 
@@ -114,38 +114,31 @@
 
 \begin{frame}[c]{Dataset}
 %-------------------------------------------------------
-	\begin{columns}
-		\begin{column}{0.5\textwidth}
-			\begin{itemize}
-    			\item Images have been taken from $293$ \textbf{beetles}, seperate into 5 parts (images),
-    			\item Format: $2$D in RGB color,
-    			\item Focus on \textbf{\color{red}pronotum} images.
-  			\end{itemize}
-		\end{column}
-		\begin{column}{0.5\textwidth}  %%<--- here
-    		\begin{center}
-     			\begin{figure}[htbp]
-        			\centering
-        			\includegraphics[scale=1]{images/pronotum}
-        			%\caption{\footnotesize{Pronotum part}}
-    				\label{figrsexample1}
-				\end{figure}
-     		\end{center}
-		\end{column}
-	\end{columns}
+	\begin{itemize}
+    	\item Images have been taken from $293$ \textbf{beetles}, seperate into 5 parts,
+    	\item Format: $2$D in RGB color,
+    	\item Focus on \textbf{\color{red}pronotum} images.
+  	\end{itemize}
+	
 	\begin{figure}[htbp]
-   				 
-    			\begin{subfigure}[t]{0.22\textwidth}
+    			\begin{subfigure}[t]{0.3\textwidth}
         			\centering
-        			\includegraphics[scale=.18]{images/elytre2}
-        			\caption{\footnotesize{Body part}}
+        			\includegraphics[scale=.2]{images/elytre2}
+        			\caption*{\footnotesize{Body part}}
         			\label{figsub22}
     			\end{subfigure}
     			~ 
-    			\begin{subfigure}[t]{0.22\textwidth}
+    			\begin{subfigure}[t]{0.3\textwidth}
         			\centering
-        			\includegraphics[scale=.18]{images/tete2}
-        			\caption{\footnotesize{Head part}}
+        			\includegraphics[scale=.2]{images/tete2}
+        			\caption*{\footnotesize{Head part}}
+        			\label{figsub22}
+    			\end{subfigure}
+    			~ 
+    			\begin{subfigure}[t]{0.33\textwidth}
+        			\centering
+        			\includegraphics[scale=1.1]{images/pronotum}
+        			\caption*{\footnotesize{Pronotum part}}
         			\label{figsub22}
     			\end{subfigure}
 			\end{figure}
@@ -645,3 +638,42 @@ geometric morphometrics and convolutional neural networks," IET Biometrics, vol.
     			\end{subfigure}    		    			
 			\end{figure}
 \end{frame}    			
+
+
+\begin{frame}[c]{Dataset}
+%-------------------------------------------------------
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+    			\item Images have been taken from $293$ \textbf{beetles}, seperate into 5 parts (images),
+    			\item Format: $2$D in RGB color,
+    			\item Focus on \textbf{\color{red}pronotum} images.
+  			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}  %%<--- here
+    		\begin{center}
+     			\begin{figure}[htbp]
+        			\centering
+        			\includegraphics[scale=0.8]{images/pronotum}
+        			\caption*{\footnotesize{Pronotum part}}
+    				\label{figrsexample1}
+				\end{figure}
+     		\end{center}
+		\end{column}
+	\end{columns}
+	\begin{figure}[h]
+    			\begin{subfigure}[t]{0.3\textwidth}
+        			\centering
+        			\includegraphics[scale=.15]{images/elytre2}
+        			\caption*{\footnotesize{Body part}}
+        			\label{figsub22}
+    			\end{subfigure}
+    			~ 
+    			\begin{subfigure}[t]{0.3\textwidth}
+        			\centering
+        			\includegraphics[scale=.15]{images/tete2}
+        			\caption*{\footnotesize{Head part}}
+        			\label{figsub22}
+    			\end{subfigure}
+    			
+\end{frame}
