@@ -32,9 +32,10 @@
 % DEFFINING AND REDEFINING COMMANDS
 
 \definecolor{conv}{RGB}{255, 102, 0.0}
-\definecolor{pool}{RGB}{255, 210, 0}
-\definecolor{drop}{RGB}{153, 255, 102}
+\definecolor{pool}{RGB}{255, 223, 51}
+\definecolor{drop}{RGB}{173, 220, 83}
 \definecolor{citem}{RGB}{15, 88, 11}
+\definecolor{elem}{RGB}{0, 112, 255}
 %-------------------------------------------------------
 
 % colored hyperlinks
@@ -95,15 +96,15 @@
 %-------------------------------------------------------
 \begin{block}{Morphometry analysis}
   \begin{itemize}    
-    \item Used to study the complex interaction between the evolution of insect and environmental factors.
-    \item Characterize information of biological species such as, shape, sizes, or \textbf{landmarks},\ldots.
+    \item Used to study the complex interaction between the morphometry of species and environmental factors.
+    \item Characterize information of biological species such as shape, sizes, or \textbf{landmarks},\ldots.
   \end{itemize}
   \end{block}
 
   \begin{block}{Landmark}
   \begin{itemize}
      \item A kind of \textbf{point of interest} 
-     \item A specific point defined by biologist. For example, intersection of veins on fly wing, the corner of beetle's pronotum,\ldots
+     \item A specific point defined by biologist. For example, intersection of veins on fly wing, the corner of beetle's pronotum shape,\ldots
   \end{itemize}
   	\begin{figure}[htbp]
        \centering
@@ -129,14 +130,14 @@
     			\begin{subfigure}[t]{0.3\textwidth}
         			\centering
         			\includegraphics[scale=.2]{images/elytre2}
-        			\caption*{\footnotesize{Body part}}
+        			\caption*{\footnotesize{Body part/elytre}}
         			\label{figsub22}
     			\end{subfigure}
     			~ 
     			\begin{subfigure}[t]{0.3\textwidth}
         			\centering
         			\includegraphics[scale=.2]{images/tete2}
-        			\caption*{\footnotesize{Head part}}
+        			\caption*{\footnotesize{Head part/tete}}
         			\label{figsub22}
     			\end{subfigure}
     			~ 
@@ -151,7 +152,7 @@
 
 %-------------------------------------------------------
 
-\begin{frame}{Goals}{}
+\begin{frame}{Landmark setting}{}
 %-------------------------------------------------------
 	\begin{block}{Manual landmarks}		
 		\begin{itemize}
@@ -159,7 +160,6 @@
 					\item Difficult to pre-procedure
   				\end{itemize}
 	\end{block}
-	
 	\begin{block}{Problems}
 		\begin{columns}
 			\begin{column}{0.65\textwidth}
@@ -178,8 +178,9 @@
 			\end{column}
 		\end{columns}		
 	\end{block}
+	\pause
 	\begin{center}	
-		\textbf{How to {\color{red}automatically} predict the {\color{red}landmarks coordinates} on {\color{red}pronotum} images?}	
+		\textbf{How to {\color{red}automatically} predict the {\color{red}landmarks coordinates}?}	
 	\end{center}
   	
   
@@ -198,9 +199,9 @@
 	\only<1-2>{
 	\begin{block}{Definition\footnotemark[1]}
 		\begin{itemize}
-			\item A class of machine learning methods,
-			\item Use a cascade of multiple layers for feature extraction and transformation,
-			\item Learn multiple levels of representation in supervised or unsupervised.
+			\item A class of machine learning methods.
+			\item Use a cascade of multiple layers for feature extraction and transformation.
+			\item Learn multiple levels of representation in supervised or unsupervised mode.
 		\end{itemize}
 	\end{block}{\footnotetext[1]{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, “Deep learning,” Nature, vol. 521, no. 7553, pp. 436–444, 2015}}}
 	}
@@ -209,7 +210,7 @@
 		\begin{itemize}
 			\item Computer vision (image recognition and classification)
 			\item Speech recognition
-			\item Question answering, language translation
+			\item Question answering, language translation, \ldots
 		\end{itemize}
 	\end{block}
 	}
@@ -225,7 +226,7 @@
 	\end{itemize}
 	\begin{figure}[htbp]
   		\centering
-   	 	\includegraphics[scale=.27]{images/arch_cnn}
+   	 	\includegraphics[scale=.27]{images/arch_cnn1}
    	 	%\caption{\footnotesize{An example of CNN}}
 	\end{figure}
 	\footnotetext[1]{
@@ -240,31 +241,34 @@ and applications in vision", 2010.
 \subsection{Network architectures}
 %-------------------------------------------------------
 %-------------------------------------------------------
+\begin{frame}{First architecture}{}
+	The first applied networks:
+	\begin{itemize}
+		\item Repeat the pair of {\color{conv}convolutional} and {\color{pool}maximum pooling} layers
+		\item Trying to adjust the parameters of the layers
+	\end{itemize}
+	\begin{center}
+   		\begin{figure}[htbp]
+   			\centering
+    		\includegraphics[scale=.28]{images/arch_cnn2}    
+		\end{figure}
+   \end{center}
+\end{frame}
+%-------------------------------------------------------
 \begin{frame}{Our proposed architecture}{Elementary block}
   \begin{columns}
 		\begin{column}{0.45\textwidth}	
 			
-			\textbf{\color{red}Elementary block}: 
+			\textbf{\color{elem}Elementary block}: 
 			\small{
 			\begin{itemize}
-				\only<1,2>{\item A \textbf{\color{conv}convolutional} layer,
-    			\item A \textbf{\color{pool}maxixum pooling} layer,}
-    			\only<2>{\item A \textbf{\color{drop}dropout} layer}
+				\item A \textbf{\color{conv}convolutional} layer,
+    			\item A \textbf{\color{pool}maxixum pooling} layer,
+    			\item A \textbf{\color{drop}dropout} layer
   			\end{itemize}  			
   			}			 			
 		\end{column}
 		\begin{column}{0.55\textwidth}  %%<--- here
-			\only<1>{
-			\begin{center}
-     			\begin{figure}[htbp]
-        			\centering
-        			\includegraphics[scale=.28]{images/elementary_block_1}
-        			%\caption{\footnotesize{Pronotum}}
-    				\label{figrsexample1}
-				\end{figure}
-     		\end{center}	
-     		}		
-     		\only<2>{
 			\begin{center}
      			\begin{figure}[htbp]
         			\centering
@@ -272,8 +276,7 @@ and applications in vision", 2010.
         			%\caption{\footnotesize{Pronotum}}
     				\label{figrsexample1}
 				\end{figure}
-     		\end{center}	
-     		}				     		
+     		\end{center}	     					     		
 		\end{column}
 	\end{columns}~\\		
 		
@@ -284,9 +287,9 @@ and applications in vision", 2010.
 	The proposed model: 
 		\small{
 			\begin{itemize}
-				\item \textbf{Three} \textbf{\color{red}elementary blocks},
+				\item \textbf{Three} \textbf{\color{elem}elementary blocks},
     			\item \textbf{Three} {\color{blue}full-connected} (FC) layers
-    			\item A dropout layer was inserted between the first of two FCs
+    			\item A dropout layer was inserted between the first and the second FC layer
   			\end{itemize}}
   		
     		\begin{center}
@@ -307,7 +310,7 @@ and applications in vision", 2010.
 		\only<2,3>{\item Split the channels.}
 	\end{itemize}
 	}
-	\only<3>{Total: $293 \times 7 = 2,051$ images}
+	\only<3>{$\Rightarrow$ Total: $293 \times 7 = 2,051$ images}
 \only<1>{
   \begin{center}
      \begin{figure}[htbp]
@@ -364,7 +367,7 @@ and applications in vision", 2010.
 	\footnotetext{\tiny{An epoch is a single pass through the full training set.}}
 \end{frame}
 
-\begin{frame}{First result}{Correlation metrics and landmarks on the images}
+\begin{frame}{First results}{Correlation metrics and landmarks on the images}
 	\begin{itemize}
 		\item Quality metrics: coefficient of determination ($r^2$), explained variance (EV), Pearson correlation.
 			\begin{table}[htbp]
@@ -398,7 +401,7 @@ and applications in vision", 2010.
 
 %-------------------------------------------------------
 
-\begin{frame}{First result}{Average distances}
+\begin{frame}{First results}{Average distances}
 	\begin{itemize}			
 		\item Calculate the distance between predicted landmarks and corresponding manual landmarks.	
 		\item Compute the average distance by landmark.\\
@@ -426,9 +429,9 @@ and applications in vision", 2010.
 \subsection{Fine-tuning}
 \begin{frame}{Transfer learning/Knowledge transfer}{}
 	\begin{itemize}
-		\item Re-uses model developed for a specific task/dataset to lead another task with another dataset
+		\item Re-use model developed for a specific task/dataset to lead another task on another dataset
 		\item \textbf{Fine-tuning}: retrain a pretrained model
-		\item \textbf{Model Zoo} (Caffe library): people share their network weights.
+		\item \textbf{Model Zoo} (Caffe library): people share their pre-trained networks.
 	\end{itemize}				
 	\begin{center}
      \begin{figure}[htbp]

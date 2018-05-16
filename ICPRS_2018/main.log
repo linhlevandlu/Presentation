@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.4)  15 MAY 2018 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.18)  16 MAY 2018 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1171,67 +1171,67 @@ Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 64.
+(hyperref)                removing `superscript' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 64.
+(hyperref)                removing `superscript' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 64.
+(hyperref)                removing `\\' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 64.
+(hyperref)                removing `superscript' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 64.
+(hyperref)                removing `superscript' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 64.
+(hyperref)                removing `math shift' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 64.
+(hyperref)                removing `\\' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 64.
+(hyperref)                removing `\\' on input line 65.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 64.
+(hyperref)                removing `\\' on input line 65.
 
 (./main.aux
 
@@ -1261,21 +1261,21 @@ LaTeX Warning: Label `sub@figsub22' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
-LaTeX Font Info:    ... okay on input line 81.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 81.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 82.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
@@ -1343,7 +1343,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 81.
+Package hyperref Info: Link coloring OFF on input line 82.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1353,56 +1353,56 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count175
 )
-LaTeX Info: Redefining \ref on input line 81.
-LaTeX Info: Redefining \pageref on input line 81.
-LaTeX Info: Redefining \nameref on input line 81.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 81.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 82.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 81.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 82.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 81.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 81.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 82.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 81.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 81.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 81.
+(Font)                  OT1/cmr/bx/n --> T1/phv/bx/n on input line 82.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 81.
+(Font)                  OT1/cmss/m/n --> T1/phv/m/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 81.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 81.
+(Font)                  OT1/cmss/bx/n --> T1/phv/m/n on input line 82.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 81.
+(Font)                  OT1/cmr/m/it --> T1/phv/m/it on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 81.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 81.
+(Font)                  OT1/cmr/bx/it --> T1/phv/m/it on input line 82.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 81.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 81.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 82.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 81.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 82.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 81.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 81.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 81.
+(Font)                  T1/phv/bx/n --> T1/phv/bx/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 81.
+(Font)                  T1/phv/m/n --> T1/phv/bx/n on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 81.
+(Font)                  T1/phv/m/it --> T1/phv/bx/it on input line 82.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 81.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 82.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1428,70 +1428,70 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 81.
+LaTeX Info: Redefining \includegraphics on input line 82.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./main.nav)
 <images/2.png, id=55, 150.5625pt x 150.5625pt>
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 81.
+Package pdftex.def Info: images/2.png used on input line 82.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+LaTeX Font Info:    Try loading font information for U+msa on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 90.
+LaTeX Font Info:    Try loading font information for U+msb on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 91.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 91.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 90.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 91.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 91.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 91.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 91.
 
 <images/1.pdf, id=57, 1226.5825pt x 812.03375pt>
 File: images/1.pdf Graphic file (type pdf)
  <use images/1.pdf>
-Package pdftex.def Info: images/1.pdf used on input line 90.
+Package pdftex.def Info: images/1.pdf used on input line 91.
 (pdftex.def)             Requested size: 364.19693pt x 273.13885pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/1.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 114.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 115.
 
 <images/wing.png, id=86, 513.92pt x 250.9375pt>
 File: images/wing.png Graphic file (type png)
  <use images/wing.png>
-Package pdftex.def Info: images/wing.png used on input line 114.
+Package pdftex.def Info: images/wing.png used on input line 115.
 (pdftex.def)             Requested size: 87.36523pt x 42.6588pt.
 
 <images/pronotum_lm.jpg, id=87, 192.72pt x 144.54pt>
 File: images/pronotum_lm.jpg Graphic file (type jpg)
 
 <use images/pronotum_lm.jpg>
-Package pdftex.def Info: images/pronotum_lm.jpg used on input line 114.
+Package pdftex.def Info: images/pronotum_lm.jpg used on input line 115.
 (pdftex.def)             Requested size: 57.81644pt x 43.36232pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 114.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 115.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 114.
+Package pdftex.def Info: images/2.png used on input line 115.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [2
@@ -1500,28 +1500,28 @@ Missing character: There is no ; in font nullfont!
 <images/elytre2.png, id=99, 386.44376pt x 592.2125pt>
 File: images/elytre2.png Graphic file (type png)
  <use images/elytre2.png>
-Package pdftex.def Info: images/elytre2.png used on input line 150.
+Package pdftex.def Info: images/elytre2.png used on input line 151.
 (pdftex.def)             Requested size: 77.28737pt x 118.4404pt.
 
 <images/tete2.png, id=100, 386.44376pt x 592.2125pt>
 File: images/tete2.png Graphic file (type png)
  <use images/tete2.png>
-Package pdftex.def Info: images/tete2.png used on input line 150.
+Package pdftex.def Info: images/tete2.png used on input line 151.
 (pdftex.def)             Requested size: 77.28737pt x 118.4404pt.
 
 <images/pronotum.jpg, id=101, 106.799pt x 81.103pt>
 File: images/pronotum.jpg Graphic file (type jpg)
  <use images/pronotum.jpg>
-Package pdftex.def Info: images/pronotum.jpg used on input line 150.
+Package pdftex.def Info: images/pronotum.jpg used on input line 151.
 (pdftex.def)             Requested size: 117.47923pt x 89.21355pt.
 
-Overfull \hbox (16.07301pt too wide) in paragraph at lines 150--150
+Overfull \hbox (16.07301pt too wide) in paragraph at lines 151--151
  [][] 
  []
 
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 150.
+Package pdftex.def Info: images/2.png used on input line 151.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [3
@@ -1531,510 +1531,528 @@ s been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.150 \end{frame}
+l.151 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@figsub22}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.150 \end{frame}
+l.151 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{figsub22}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.150 \end{frame}
+l.151 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@figsub22}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.150 \end{frame}
+l.151 \end{frame}
                   <./images/elytre2.png> <./images/tete2.png> <./images/pronotu
 m.jpg>] <images/prono_003_lm2.jpg, id=113, 1842.885pt x 1842.885pt>
 File: images/prono_003_lm2.jpg Graphic file (type jpg)
 
 <use images/prono_003_lm2.jpg>
-Package pdftex.def Info: images/prono_003_lm2.jpg used on input line 187.
+Package pdftex.def Info: images/prono_003_lm2.jpg used on input line 188.
 (pdftex.def)             Requested size: 73.70284pt x 73.70284pt.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 187.
+Package pdftex.def Info: images/2.png used on input line 188.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [4
 
- <./images/prono_003_lm2.jpg>] (./main.toc)
+ <./images/prono_003_lm2.jpg>]
+File: images/prono_003_lm2.jpg Graphic file (type jpg)
+ <use images/prono_003_lm2.jpg>
+Package pdftex.def Info: images/prono_003_lm2.jpg used on input line 188.
+(pdftex.def)             Requested size: 73.70284pt x 73.70284pt.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 192.
+Package pdftex.def Info: images/2.png used on input line 188.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [5
 
-]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 216.
+] (./main.toc)
 File: images/2.png Graphic file (type png)
- <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 216.
+
+<use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 193.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [6
 
 ]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 217.
 File: images/2.png Graphic file (type png)
-
-<use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 216.
+ <use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 217.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [7
 
-] <images/arch_cnn.png, id=159, 1163.34625pt x 337.26pt>
-File: images/arch_cnn.png Graphic file (type png)
+]
+File: images/2.png Graphic file (type png)
+ <use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 217.
+(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
+Missing character: There is no ; in font nullfont!
+ [8
 
-<use images/arch_cnn.png>
-Package pdftex.def Info: images/arch_cnn.png used on input line 237.
-(pdftex.def)             Requested size: 314.10768pt x 91.06142pt.
+]
+<images/arch_cnn1.png, id=166, 731.73375pt x 256.96pt>
+File: images/arch_cnn1.png Graphic file (type png)
 
-Overfull \hbox (6.81781pt too wide) in paragraph at lines 237--237
+<use images/arch_cnn1.png>
+Package pdftex.def Info: images/arch_cnn1.png used on input line 238.
+(pdftex.def)             Requested size: 197.57076pt x 69.38011pt.
+File: images/2.png Graphic file (type png)
+ <use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 238.
+(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
+Missing character: There is no ; in font nullfont!
+ [9
+
+ <./images/arch_cnn1.png>]
+<images/arch_cnn2.png, id=174, 1143.27126pt x 275.0275pt>
+File: images/arch_cnn2.png Graphic file (type png)
+
+<use images/arch_cnn2.png>
+Package pdftex.def Info: images/arch_cnn2.png used on input line 256.
+(pdftex.def)             Requested size: 320.11377pt x 77.00717pt.
+
+Overfull \hbox (12.8239pt too wide) in paragraph at lines 256--256
  [] 
  []
 
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 237.
+Package pdftex.def Info: images/2.png used on input line 256.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
- [8
+ [10
 
- <./images/arch_cnn.png>]
+ <./images/arch_cnn2.png>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 280.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 283.
 
-<images/elementary_block_1.png, id=167, 614.295pt x 325.215pt>
-File: images/elementary_block_1.png Graphic file (type png)
+<images/elementary_block.png, id=182, 614.295pt x 325.215pt>
+File: images/elementary_block.png Graphic file (type png)
 
-<use images/elementary_block_1.png>
-Package pdftex.def Info: images/elementary_block_1.png used on input line 280.
+<use images/elementary_block.png>
+Package pdftex.def Info: images/elementary_block.png used on input line 283.
 (pdftex.def)             Requested size: 172.00142pt x 91.05957pt.
 
-Overfull \hbox (2.99106pt too wide) in paragraph at lines 280--280
+Overfull \hbox (2.99106pt too wide) in paragraph at lines 283--283
  [][][][] 
  []
 
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 280.
+Package pdftex.def Info: images/2.png used on input line 283.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
- [9
-
- <./images/elementary_block_1.png (PNG copy)>]
-<images/elementary_block.png, id=176, 614.295pt x 325.215pt>
-File: images/elementary_block.png Graphic file (type png)
-
-<use images/elementary_block.png>
-Package pdftex.def Info: images/elementary_block.png used on input line 280.
-(pdftex.def)             Requested size: 172.00142pt x 91.05957pt.
-
-Overfull \hbox (2.99106pt too wide) in paragraph at lines 280--280
- [][] 
- []
-
-File: images/2.png Graphic file (type png)
-<use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 280.
-(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
-Missing character: There is no ; in font nullfont!
- [10
+ [11
 
  <./images/elementary_block.png (PNG copy)>]
-<images/arch_model.png, id=184, 1637.11626pt x 283.0575pt>
+<images/arch_model.png, id=191, 1637.11626pt x 283.0575pt>
 File: images/arch_model.png Graphic file (type png)
 
 <use images/arch_model.png>
-Package pdftex.def Info: images/arch_model.png used on input line 298.
+Package pdftex.def Info: images/arch_model.png used on input line 301.
 (pdftex.def)             Requested size: 327.41745pt x 56.61049pt.
 
-Overfull \hbox (20.12758pt too wide) in paragraph at lines 298--298
+Overfull \hbox (20.12758pt too wide) in paragraph at lines 301--301
  [] 
  []
 
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 298.
+Package pdftex.def Info: images/2.png used on input line 301.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
- [11
+ [12
 
  <./images/arch_model.png>]
-<images/inc_channels.png, id=192, 547.04375pt x 339.2675pt>
+<images/inc_channels.png, id=199, 547.04375pt x 339.2675pt>
 File: images/inc_channels.png Graphic file (type png)
 
 <use images/inc_channels.png>
-Package pdftex.def Info: images/inc_channels.png used on input line 342.
+Package pdftex.def Info: images/inc_channels.png used on input line 345.
 (pdftex.def)             Requested size: 246.1674pt x 152.66896pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figrsexample1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.342 \end{frame}
+l.345 \end{frame}
                  
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 342.
-(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
-Missing character: There is no ; in font nullfont!
- [12
-
- <./images/inc_channels.png>]
-<images/sp_channels.png, id=199, 562.1pt x 338.26375pt>
-File: images/sp_channels.png Graphic file (type png)
-
-<use images/sp_channels.png>
-Package pdftex.def Info: images/sp_channels.png used on input line 342.
-(pdftex.def)             Requested size: 252.94266pt x 152.21727pt.
-File: images/2.png Graphic file (type png)
- <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 342.
+Package pdftex.def Info: images/2.png used on input line 345.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [13
 
- <./images/sp_channels.png>] <images/data_aug.png, id=208, 510.90875pt x 510.90
-875pt>
-File: images/data_aug.png Graphic file (type png)
+ <./images/inc_channels.png>]
+<images/sp_channels.png, id=207, 562.1pt x 338.26375pt>
+File: images/sp_channels.png Graphic file (type png)
 
-<use images/data_aug.png>
-Package pdftex.def Info: images/data_aug.png used on input line 342.
-(pdftex.def)             Requested size: 127.72687pt x 127.72687pt.
+<use images/sp_channels.png>
+Package pdftex.def Info: images/sp_channels.png used on input line 345.
+(pdftex.def)             Requested size: 252.94266pt x 152.21727pt.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 342.
+Package pdftex.def Info: images/2.png used on input line 345.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [14
 
+ <./images/sp_channels.png>] <images/data_aug.png, id=215, 510.90875pt x 510.90
+875pt>
+File: images/data_aug.png Graphic file (type png)
+
+<use images/data_aug.png>
+Package pdftex.def Info: images/data_aug.png used on input line 345.
+(pdftex.def)             Requested size: 127.72687pt x 127.72687pt.
+File: images/2.png Graphic file (type png)
+ <use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 345.
+(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
+Missing character: There is no ; in font nullfont!
+ [15
+
  <./images/data_aug.png>]
 Package epstopdf Info: Source file: <images/loss_model_3.eps>
-(epstopdf)                    date: 2018-03-02 21:55:31
+(epstopdf)                    date: 2018-04-11 08:39:25
 (epstopdf)                    size: 110238 bytes
 (epstopdf)             Output file: <images/loss_model_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-12 20:10:25
+(epstopdf)                    date: 2018-04-12 09:46:56
 (epstopdf)                    size: 34405 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/loss_model_3-eps-co
 nverted-to.pdf images/loss_model_3.eps>
-(epstopdf)             \includegraphics on input line 365.
+(epstopdf)             \includegraphics on input line 368.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/loss_model_3-eps-converted-to.pdf, id=219, 579.16376pt x 434.62375pt>
+<images/loss_model_3-eps-converted-to.pdf, id=226, 579.16376pt x 434.62375pt>
 File: images/loss_model_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/loss_model_3-eps-converted-to.pdf>
 Package pdftex.def Info: images/loss_model_3-eps-converted-to.pdf used on input
- line 365.
+ line 368.
 (pdftex.def)             Requested size: 173.75046pt x 130.38812pt.
 pdfTeX warning (ext4): destination with the same identifier (name{figrsexample1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.365 \end{frame}
+l.368 \end{frame}
                  
-Overfull \vbox (4.94818pt too high) detected at line 365
+Overfull \vbox (4.94818pt too high) detected at line 368
  []
 
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 365.
-(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
-Missing character: There is no ; in font nullfont!
- [15
-
- <./images/loss_model_3-eps-converted-to.pdf>]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 396.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 396.
-
-Overfull \hbox (2.12683pt too wide) in paragraph at lines 396--396
-[]$[]$| 
- []
-
-
-Overfull \hbox (2.12683pt too wide) in paragraph at lines 396--396
-[]$[]$| 
- []
-
-Package epstopdf Info: Source file: <images/plandmark.eps>
-(epstopdf)                    date: 2018-03-05 20:44:46
-(epstopdf)                    size: 4226766 bytes
-(epstopdf)             Output file: <images/plandmark-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-07 21:14:29
-(epstopdf)                    size: 479189 bytes
-(epstopdf)             Command: <repstopdf --outfile=images/plandmark-eps-conve
-rted-to.pdf images/plandmark.eps>
-(epstopdf)             \includegraphics on input line 396.
-Package epstopdf Info: Output file is already uptodate.
-<images/plandmark-eps-converted-to.pdf, id=229, 1098.1025pt x 831.105pt>
-File: images/plandmark-eps-converted-to.pdf Graphic file (type pdf)
-
-<use images/plandmark-eps-converted-to.pdf>
-Package pdftex.def Info: images/plandmark-eps-converted-to.pdf used on input li
-ne 396.
-(pdftex.def)             Requested size: 148.23743pt x 112.19432pt.
-Package epstopdf Info: Source file: <images/plandmark2.eps>
-(epstopdf)                    date: 2018-03-02 21:55:31
-(epstopdf)                    size: 1251364 bytes
-(epstopdf)             Output file: <images/plandmark2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-07 21:14:33
-(epstopdf)                    size: 60650 bytes
-(epstopdf)             Command: <repstopdf --outfile=images/plandmark2-eps-conv
-erted-to.pdf images/plandmark2.eps>
-(epstopdf)             \includegraphics on input line 396.
-Package epstopdf Info: Output file is already uptodate.
-
-<images/plandmark2-eps-converted-to.pdf, id=230, 746.79pt x 559.08875pt>
-File: images/plandmark2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use images/plandmark2-eps-converted-to.pdf>
-Package pdftex.def Info: images/plandmark2-eps-converted-to.pdf used on input l
-ine 396.
-(pdftex.def)             Requested size: 149.35535pt x 111.81577pt.
-pdfTeX warning (ext4): destination with the same identifier (name{figsub22}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.396 \end{frame}
-                 pdfTeX warning (ext4): destination with the same identifier (n
-ame{sub@figsub22}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.396 \end{frame}
-                 
-Overfull \hbox (24.23997pt too wide) in paragraph at lines 396--396
- []  [] 
- []
-
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 396.
-
-Overfull \vbox (3.72849pt too high) detected at line 396
- []
-
-File: images/2.png Graphic file (type png)
-<use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 396.
+Package pdftex.def Info: images/2.png used on input line 368.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [16
 
- <./images/plandmark-eps-converted-to.pdf> <./images/plandmark2-eps-converted-t
-o.pdf>]
-Overfull \hbox (2.12683pt too wide) in paragraph at lines 396--396
+ <./images/loss_model_3-eps-converted-to.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 399.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 399.
+
+Overfull \hbox (2.12683pt too wide) in paragraph at lines 399--399
 []$[]$| 
  []
 
 
-Overfull \hbox (2.12683pt too wide) in paragraph at lines 396--396
+Overfull \hbox (2.12683pt too wide) in paragraph at lines 399--399
 []$[]$| 
  []
 
 Package epstopdf Info: Source file: <images/plandmark.eps>
-(epstopdf)                    date: 2018-03-05 20:44:46
-(epstopdf)                    size: 4226766 bytes
+(epstopdf)                    date: 2018-05-16 17:32:09
+(epstopdf)                    size: 4225487 bytes
 (epstopdf)             Output file: <images/plandmark-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-07 21:14:29
-(epstopdf)                    size: 479189 bytes
+(epstopdf)                    date: 2018-05-16 10:55:17
+(epstopdf)                    size: 484271 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/plandmark-eps-conve
 rted-to.pdf images/plandmark.eps>
-(epstopdf)             \includegraphics on input line 396.
+(epstopdf)             \includegraphics on input line 399.
+runsystem(repstopdf --outfile=images/plandmark-eps-converted-to.pdf images/plan
+dmark.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images/plandmark-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-16 17:35:55
+(epstopdf)                    size: 485590 bytes.
+<images/plandmark-eps-converted-to.pdf, id=236, 1098.1025pt x 832.10875pt>
+File: images/plandmark-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/plandmark-eps-converted-to.pdf>
+Package pdftex.def Info: images/plandmark-eps-converted-to.pdf used on input li
+ne 399.
+(pdftex.def)             Requested size: 148.23743pt x 112.32983pt.
+Package epstopdf Info: Source file: <images/plandmark2.eps>
+(epstopdf)                    date: 2018-05-16 17:33:58
+(epstopdf)                    size: 2108272 bytes
+(epstopdf)             Output file: <images/plandmark2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-16 09:55:28
+(epstopdf)                    size: 272146 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/plandmark2-eps-conv
+erted-to.pdf images/plandmark2.eps>
+(epstopdf)             \includegraphics on input line 399.
+runsystem(repstopdf --outfile=images/plandmark2-eps-converted-to.pdf images/pla
+ndmark2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <images/plandmark2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-16 17:35:56
+(epstopdf)                    size: 273476 bytes.
+
+<images/plandmark2-eps-converted-to.pdf, id=237, 746.79pt x 560.0925pt>
+File: images/plandmark2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use images/plandmark2-eps-converted-to.pdf>
+Package pdftex.def Info: images/plandmark2-eps-converted-to.pdf used on input l
+ine 399.
+(pdftex.def)             Requested size: 149.35535pt x 112.01651pt.
+pdfTeX warning (ext4): destination with the same identifier (name{figsub22}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.399 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{sub@figsub22}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.399 \end{frame}
+                 
+Overfull \hbox (24.23997pt too wide) in paragraph at lines 399--399
+ []  [] 
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 399.
+
+Overfull \vbox (3.864pt too high) detected at line 399
+ []
+
+File: images/2.png Graphic file (type png)
+<use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 399.
+(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
+Missing character: There is no ; in font nullfont!
+ [17
+
+ <./images/plandmark-eps-converted-to.pdf> <./images/plandmark2-eps-converted-t
+o.pdf>]
+Overfull \hbox (2.12683pt too wide) in paragraph at lines 399--399
+[]$[]$| 
+ []
+
+
+Overfull \hbox (2.12683pt too wide) in paragraph at lines 399--399
+[]$[]$| 
+ []
+
+Package epstopdf Info: Source file: <images/plandmark.eps>
+(epstopdf)                    date: 2018-05-16 17:32:09
+(epstopdf)                    size: 4225487 bytes
+(epstopdf)             Output file: <images/plandmark-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-16 17:35:55
+(epstopdf)                    size: 485590 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/plandmark-eps-conve
+rted-to.pdf images/plandmark.eps>
+(epstopdf)             \includegraphics on input line 399.
 Package epstopdf Info: Output file is already uptodate.
 File: images/plandmark-eps-converted-to.pdf Graphic file (type pdf)
 <use images/plandmark-eps-converted-to.pdf>
 Package pdftex.def Info: images/plandmark-eps-converted-to.pdf used on input li
-ne 396.
-(pdftex.def)             Requested size: 148.23743pt x 112.19432pt.
+ne 399.
+(pdftex.def)             Requested size: 148.23743pt x 112.32983pt.
 Package epstopdf Info: Source file: <images/plandmark2.eps>
-(epstopdf)                    date: 2018-03-02 21:55:31
-(epstopdf)                    size: 1251364 bytes
+(epstopdf)                    date: 2018-05-16 17:33:58
+(epstopdf)                    size: 2108272 bytes
 (epstopdf)             Output file: <images/plandmark2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-03-07 21:14:33
-(epstopdf)                    size: 60650 bytes
+(epstopdf)                    date: 2018-05-16 17:35:56
+(epstopdf)                    size: 273476 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/plandmark2-eps-conv
 erted-to.pdf images/plandmark2.eps>
-(epstopdf)             \includegraphics on input line 396.
+(epstopdf)             \includegraphics on input line 399.
 Package epstopdf Info: Output file is already uptodate.
 File: images/plandmark2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/plandmark2-eps-converted-to.pdf>
 Package pdftex.def Info: images/plandmark2-eps-converted-to.pdf used on input l
-ine 396.
-(pdftex.def)             Requested size: 149.35535pt x 111.81577pt.
+ine 399.
+(pdftex.def)             Requested size: 149.35535pt x 112.01651pt.
 
-Overfull \hbox (24.23997pt too wide) in paragraph at lines 396--396
+Overfull \hbox (24.23997pt too wide) in paragraph at lines 399--399
  []  [] 
  []
 
 
-Overfull \vbox (3.72849pt too high) detected at line 396
+Overfull \vbox (3.864pt too high) detected at line 399
  []
 
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 396.
-(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
-Missing character: There is no ; in font nullfont!
- [17
-
-]
-File: images/2.png Graphic file (type png)
- <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 423.
+Package pdftex.def Info: images/2.png used on input line 399.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [18
 
 ]
-<images/transfer_learning_2x.png, id=260, 1204.5pt x 630.355pt>
-File: images/transfer_learning_2x.png Graphic file (type png)
-
-<use images/transfer_learning_2x.png>
-Package pdftex.def Info: images/transfer_learning_2x.png used on input line 439
-.
-(pdftex.def)             Requested size: 240.89574pt x 126.06876pt.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 439.
+Package pdftex.def Info: images/2.png used on input line 426.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [19
 
- <./images/transfer_learning_2x.png>] <images/merge.png, id=269, 729.72626pt x 
-361.35pt>
-File: images/merge.png Graphic file (type png)
+]
+<images/transfer_learning_2x.png, id=268, 1204.5pt x 630.355pt>
+File: images/transfer_learning_2x.png Graphic file (type png)
 
-<use images/merge.png>
-Package pdftex.def Info: images/merge.png used on input line 464.
-(pdftex.def)             Requested size: 291.88533pt x 144.53743pt.
+<use images/transfer_learning_2x.png>
+Package pdftex.def Info: images/transfer_learning_2x.png used on input line 442
+.
+(pdftex.def)             Requested size: 240.89574pt x 126.06876pt.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 464.
+Package pdftex.def Info: images/2.png used on input line 442.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [20
 
- <./images/merge.png>]
-<images/merge_rm.png, id=278, 729.72626pt x 361.35pt>
-File: images/merge_rm.png Graphic file (type png)
+ <./images/transfer_learning_2x.png>] <images/merge.png, id=276, 729.72626pt x 
+361.35pt>
+File: images/merge.png Graphic file (type png)
 
-<use images/merge_rm.png>
-Package pdftex.def Info: images/merge_rm.png used on input line 464.
+<use images/merge.png>
+Package pdftex.def Info: images/merge.png used on input line 467.
 (pdftex.def)             Requested size: 291.88533pt x 144.53743pt.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 464.
+Package pdftex.def Info: images/2.png used on input line 467.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [21
+
+ <./images/merge.png>]
+<images/merge_rm.png, id=285, 729.72626pt x 361.35pt>
+File: images/merge_rm.png Graphic file (type png)
+
+<use images/merge_rm.png>
+Package pdftex.def Info: images/merge_rm.png used on input line 467.
+(pdftex.def)             Requested size: 291.88533pt x 144.53743pt.
+File: images/2.png Graphic file (type png)
+ <use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 467.
+(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
+Missing character: There is no ; in font nullfont!
+ [22
 
  <./images/merge_rm.png>]
 File: images/2.png Graphic file (type png)
 
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 488.
-(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
-Missing character: There is no ; in font nullfont!
- [22
-
-] <images/lm1_cnn_2.jpg, id=294, 379.4175pt x 216.81pt>
-File: images/lm1_cnn_2.jpg Graphic file (type jpg)
-
-<use images/lm1_cnn_2.jpg>
-Package pdftex.def Info: images/lm1_cnn_2.jpg used on input line 526.
-(pdftex.def)             Requested size: 151.7643pt x 86.72246pt.
-
-<images/lm1_finetuning_2.jpg, id=295, 414.79968pt x 218.33147pt>
-File: images/lm1_finetuning_2.jpg Graphic file (type jpg)
-
-<use images/lm1_finetuning_2.jpg>
-Package pdftex.def Info: images/lm1_finetuning_2.jpg used on input line 526.
-(pdftex.def)             Requested size: 157.62552pt x 82.96681pt.
-
-Overfull \hbox (3.98059pt too wide) in paragraph at lines 526--526
- [][] 
- []
-
-
-Overfull \hbox (24.23997pt too wide) in paragraph at lines 526--526
- []  [] 
- []
-
-File: images/2.png Graphic file (type png)
-<use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 526.
+Package pdftex.def Info: images/2.png used on input line 491.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [23
 
- <./images/lm1_cnn_2.jpg> <./images/lm1_finetuning_2.jpg>] <images/lm6_cnn_2.jp
-g, id=303, 382.65063pt x 225.84375pt>
-File: images/lm6_cnn_2.jpg Graphic file (type jpg)
+] <images/lm1_cnn_2.jpg, id=301, 379.4175pt x 216.81pt>
+File: images/lm1_cnn_2.jpg Graphic file (type jpg)
 
-<use images/lm6_cnn_2.jpg>
-Package pdftex.def Info: images/lm6_cnn_2.jpg used on input line 526.
-(pdftex.def)             Requested size: 153.05753pt x 90.33589pt.
+<use images/lm1_cnn_2.jpg>
+Package pdftex.def Info: images/lm1_cnn_2.jpg used on input line 529.
+(pdftex.def)             Requested size: 151.7643pt x 86.72246pt.
 
-<images/lm6_finetuning_2.jpg, id=304, 407.27156pt x 234.30695pt>
-File: images/lm6_finetuning_2.jpg Graphic file (type jpg)
+<images/lm1_finetuning_2.jpg, id=302, 414.79968pt x 218.33147pt>
+File: images/lm1_finetuning_2.jpg Graphic file (type jpg)
 
-<use images/lm6_finetuning_2.jpg>
-Package pdftex.def Info: images/lm6_finetuning_2.jpg used on input line 526.
-(pdftex.def)             Requested size: 154.76479pt x 89.03755pt.
+<use images/lm1_finetuning_2.jpg>
+Package pdftex.def Info: images/lm1_finetuning_2.jpg used on input line 529.
+(pdftex.def)             Requested size: 157.62552pt x 82.96681pt.
 
-Overfull \hbox (1.11986pt too wide) in paragraph at lines 526--526
+Overfull \hbox (3.98059pt too wide) in paragraph at lines 529--529
  [][] 
  []
 
 
-Overfull \hbox (24.23997pt too wide) in paragraph at lines 526--526
+Overfull \hbox (24.23997pt too wide) in paragraph at lines 529--529
  []  [] 
  []
 
 File: images/2.png Graphic file (type png)
 <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 526.
+Package pdftex.def Info: images/2.png used on input line 529.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [24
 
- <./images/lm6_cnn_2.jpg> <./images/lm6_finetuning_2.jpg>]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 550.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 550.
+ <./images/lm1_cnn_2.jpg> <./images/lm1_finetuning_2.jpg>] <images/lm6_cnn_2.jp
+g, id=311, 382.65063pt x 225.84375pt>
+File: images/lm6_cnn_2.jpg Graphic file (type jpg)
+
+<use images/lm6_cnn_2.jpg>
+Package pdftex.def Info: images/lm6_cnn_2.jpg used on input line 529.
+(pdftex.def)             Requested size: 153.05753pt x 90.33589pt.
+
+<images/lm6_finetuning_2.jpg, id=312, 407.27156pt x 234.30695pt>
+File: images/lm6_finetuning_2.jpg Graphic file (type jpg)
+
+<use images/lm6_finetuning_2.jpg>
+Package pdftex.def Info: images/lm6_finetuning_2.jpg used on input line 529.
+(pdftex.def)             Requested size: 154.76479pt x 89.03755pt.
+
+Overfull \hbox (1.11986pt too wide) in paragraph at lines 529--529
+ [][] 
+ []
+
+
+Overfull \hbox (24.23997pt too wide) in paragraph at lines 529--529
+ []  [] 
+ []
+
 File: images/2.png Graphic file (type png)
- <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 550.
+<use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 529.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [25
 
-]
+ <./images/lm6_cnn_2.jpg> <./images/lm6_finetuning_2.jpg>]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 553.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 553.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
-Package pdftex.def Info: images/2.png used on input line 550.
+Package pdftex.def Info: images/2.png used on input line 553.
 (pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
 Missing character: There is no ; in font nullfont!
  [26
 
 ]
+File: images/2.png Graphic file (type png)
+ <use images/2.png>
+Package pdftex.def Info: images/2.png used on input line 553.
+(pdftex.def)             Requested size: 29.92476pt x 29.92357pt.
+Missing character: There is no ; in font nullfont!
+ [27
+
+]
 File: images/1.pdf Graphic file (type pdf)
  <use images/1.pdf>
-Package pdftex.def Info: images/1.pdf used on input line 556.
+Package pdftex.def Info: images/1.pdf used on input line 559.
 (pdftex.def)             Requested size: 364.19693pt x 273.13885pt.
- [27
+ [28
 
 ]
 \tf@nav=\write6
@@ -2046,25 +2064,25 @@ Package pdftex.def Info: images/1.pdf used on input line 556.
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 561.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 561.
 
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 561.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 561.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 47D60CFADD3DDEAE69C6A033F9A6E064;638.
+(rerunfilecheck)             Checksum: 4E3C2BE59A94D8CBC59B48AF20CEE32F;639.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 558.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 561.
  ) 
 Here is how much of TeX's memory you used:
- 22469 strings out of 493029
- 433925 string characters out of 6136235
- 511803 words of memory out of 5000000
- 25361 multiletter control sequences out of 15000+600000
+ 22477 strings out of 493029
+ 433992 string characters out of 6136234
+ 513905 words of memory out of 5000000
+ 25367 multiletter control sequences out of 15000+600000
  76851 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,17n,71p,394b,894s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2082,10 +2100,10 @@ lic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm100
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (27 pages, 4911057 bytes).
+Output written on main.pdf (28 pages, 5121847 bytes).
 PDF statistics:
- 398 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 405 PDF objects out of 1000 (max. 8388607)
+ 308 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
  272 words of extra memory for PDF output out of 10000 (max. 10000000)
 
