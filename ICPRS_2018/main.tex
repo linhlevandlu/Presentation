@@ -157,7 +157,7 @@
 	\begin{block}{Manual landmarks}		
 		\begin{itemize}
 	  				\item Time-consuming
-					\item Difficult to pre-procedure
+					\item Difficult to reproduce
   				\end{itemize}
 	\end{block}
 	\begin{block}{Problems}
@@ -262,8 +262,8 @@ and applications in vision", 2010.
 			\textbf{\color{elem}Elementary block}: 
 			\small{
 			\begin{itemize}
-				\item A \textbf{\color{conv}convolutional} layer,
-    			\item A \textbf{\color{pool}maxixum pooling} layer,
+				\item A \textbf{\color{conv}convolutional} layer
+    			\item A \textbf{\color{pool}maxixum pooling} layer
     			\item A \textbf{\color{drop}dropout} layer
   			\end{itemize}  			
   			}			 			
@@ -287,7 +287,7 @@ and applications in vision", 2010.
 	The proposed model: 
 		\small{
 			\begin{itemize}
-				\item \textbf{Three} \textbf{\color{elem}elementary blocks},
+				\item \textbf{Three} \textbf{\color{elem}elementary blocks}
     			\item \textbf{Three} {\color{blue}full-connected} (FC) layers
     			\item A dropout layer was inserted between the first and the second FC layer
   			\end{itemize}}
@@ -306,8 +306,8 @@ and applications in vision", 2010.
 	\only<1-3>{Dataset: {\color{red}$293$ pronotum}  images in {\color{red}R}{\color{green}G}{\color{blue}B} format.\\}
 	\only<1-3>{Augmentation methods:
 	\begin{itemize}
-		\only<1,3>{\item Increase the value of each channel,}
-		\only<2,3>{\item Split the channels.}
+		\only<1,3>{\item Increase the value of each channel}
+		\only<2,3>{\item Split the channels}
 	\end{itemize}
 	}
 	\only<3>{$\Rightarrow$ Total: $293 \times 7 = 2,051$ images}
@@ -352,8 +352,8 @@ and applications in vision", 2010.
 		\item Training dataset: \textbf{$1,820$} images ($260 \times 7$)
 		\item Apply the cross-validation to select training and testing data
 		\item Training parameters: momentum ($0.9 \rightarrow 0.9999$), learning rate ($0.03 \rightarrow 0.00001$), $5000$ epochs\footnotemark
-		\item Image shows training and validation losses of the model.
-		\item Training time: 3 hours using NVIDIA TITAN X card.
+		\item Image shows training and validation losses of the model
+		\item Training time: 3 hours using NVIDIA TITAN X card
 	\end{itemize}
 	\begin{center}
      \begin{figure}[htbp]
@@ -444,7 +444,7 @@ and applications in vision", 2010.
 \begin{frame}{Fine-tuning our model}{}
 	\only<1-2>{	
 	\begin{itemize}
-		\item Estimated landmarks on pronotum images when fine-tuning on \textbf{VGG-16, VGG-19, ResNet50} has not been improved
+		\item Estimated landmarks on pronotum images when fine-tuning on \textbf{VGG-16, VGG-19, ResNet50} have not been improved
 		\item Train the model on a dataset including the images of $3$ parts of beetles: head, body and pronotum parts \textbf{($5,460$ images)}
 		\item Fine-tune pretrained model on pronotum dataset
 	\end{itemize}
