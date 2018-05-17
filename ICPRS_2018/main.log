@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.4)  17 MAY 2018 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.18)  17 MAY 2018 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1698,12 +1698,12 @@ Missing character: There is no ; in font nullfont!
  [13
 
  <./images/inc_channels.png>]
-<images/sp_channels.png, id=207, 134.904pt x 81.1833pt>
+<images/sp_channels.png, id=207, 562.1pt x 338.26375pt>
 File: images/sp_channels.png Graphic file (type png)
 
 <use images/sp_channels.png>
 Package pdftex.def Info: images/sp_channels.png used on input line 346.
-(pdftex.def)             Requested size: 60.70624pt x 36.53214pt.
+(pdftex.def)             Requested size: 252.94266pt x 152.21727pt.
 File: images/2.png Graphic file (type png)
  <use images/2.png>
 Package pdftex.def Info: images/2.png used on input line 346.
@@ -1711,8 +1711,8 @@ Package pdftex.def Info: images/2.png used on input line 346.
 Missing character: There is no ; in font nullfont!
  [14
 
- <./images/sp_channels.png>] <images/data_aug.png, id=216, 510.90875pt x 510.90
-875pt>
+ <./images/sp_channels.png (PNG copy)>] <images/data_aug.png, id=215, 510.90875
+pt x 510.90875pt>
 File: images/data_aug.png Graphic file (type png)
 
 <use images/data_aug.png>
@@ -1727,17 +1727,17 @@ Missing character: There is no ; in font nullfont!
 
  <./images/data_aug.png>]
 Package epstopdf Info: Source file: <images/loss_model_3.eps>
-(epstopdf)                    date: 2018-03-02 21:55:31
+(epstopdf)                    date: 2018-04-11 08:39:25
 (epstopdf)                    size: 110238 bytes
 (epstopdf)             Output file: <images/loss_model_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-12 20:10:25
+(epstopdf)                    date: 2018-04-12 09:46:56
 (epstopdf)                    size: 34405 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/loss_model_3-eps-co
 nverted-to.pdf images/loss_model_3.eps>
 (epstopdf)             \includegraphics on input line 369.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/loss_model_3-eps-converted-to.pdf, id=227, 579.16376pt x 434.62375pt>
+<images/loss_model_3-eps-converted-to.pdf, id=226, 579.16376pt x 434.62375pt>
 File: images/loss_model_3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/loss_model_3-eps-converted-to.pdf>
@@ -1776,16 +1776,16 @@ Overfull \hbox (2.12683pt too wide) in paragraph at lines 400--400
  []
 
 Package epstopdf Info: Source file: <images/plandmark.eps>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:32:09
 (epstopdf)                    size: 4225487 bytes
 (epstopdf)             Output file: <images/plandmark-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:35:55
 (epstopdf)                    size: 485590 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/plandmark-eps-conve
 rted-to.pdf images/plandmark.eps>
 (epstopdf)             \includegraphics on input line 400.
 Package epstopdf Info: Output file is already uptodate.
-<images/plandmark-eps-converted-to.pdf, id=237, 1098.1025pt x 832.10875pt>
+<images/plandmark-eps-converted-to.pdf, id=236, 1098.1025pt x 832.10875pt>
 File: images/plandmark-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/plandmark-eps-converted-to.pdf>
@@ -1793,17 +1793,17 @@ Package pdftex.def Info: images/plandmark-eps-converted-to.pdf used on input li
 ne 400.
 (pdftex.def)             Requested size: 148.23743pt x 112.32983pt.
 Package epstopdf Info: Source file: <images/plandmark2.eps>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:33:58
 (epstopdf)                    size: 2108272 bytes
 (epstopdf)             Output file: <images/plandmark2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:35:56
 (epstopdf)                    size: 273476 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/plandmark2-eps-conv
 erted-to.pdf images/plandmark2.eps>
 (epstopdf)             \includegraphics on input line 400.
 Package epstopdf Info: Output file is already uptodate.
 
-<images/plandmark2-eps-converted-to.pdf, id=238, 746.79pt x 560.0925pt>
+<images/plandmark2-eps-converted-to.pdf, id=237, 746.79pt x 560.0925pt>
 File: images/plandmark2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/plandmark2-eps-converted-to.pdf>
@@ -1850,10 +1850,10 @@ Overfull \hbox (2.12683pt too wide) in paragraph at lines 400--400
  []
 
 Package epstopdf Info: Source file: <images/plandmark.eps>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:32:09
 (epstopdf)                    size: 4225487 bytes
 (epstopdf)             Output file: <images/plandmark-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:35:55
 (epstopdf)                    size: 485590 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/plandmark-eps-conve
 rted-to.pdf images/plandmark.eps>
@@ -1865,10 +1865,10 @@ Package pdftex.def Info: images/plandmark-eps-converted-to.pdf used on input li
 ne 400.
 (pdftex.def)             Requested size: 148.23743pt x 112.32983pt.
 Package epstopdf Info: Source file: <images/plandmark2.eps>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:33:58
 (epstopdf)                    size: 2108272 bytes
 (epstopdf)             Output file: <images/plandmark2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-16 21:31:45
+(epstopdf)                    date: 2018-05-16 17:35:56
 (epstopdf)                    size: 273476 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/plandmark2-eps-conv
 erted-to.pdf images/plandmark2.eps>
@@ -1905,7 +1905,7 @@ Missing character: There is no ; in font nullfont!
  [19
 
 ]
-<images/transfer_learning_2x.png, id=269, 1204.5pt x 630.355pt>
+<images/transfer_learning_2x.png, id=268, 1204.5pt x 630.355pt>
 File: images/transfer_learning_2x.png Graphic file (type png)
 
 <use images/transfer_learning_2x.png>
@@ -1919,7 +1919,7 @@ Package pdftex.def Info: images/2.png used on input line 443.
 Missing character: There is no ; in font nullfont!
  [20
 
- <./images/transfer_learning_2x.png>] <images/merge.png, id=277, 729.72626pt x 
+ <./images/transfer_learning_2x.png>] <images/merge.png, id=276, 729.72626pt x 
 361.35pt>
 File: images/merge.png Graphic file (type png)
 
@@ -1934,7 +1934,7 @@ Missing character: There is no ; in font nullfont!
  [21
 
  <./images/merge.png>]
-<images/merge_rm.png, id=286, 729.72626pt x 361.35pt>
+<images/merge_rm.png, id=285, 729.72626pt x 361.35pt>
 File: images/merge_rm.png Graphic file (type png)
 
 <use images/merge_rm.png>
@@ -1956,14 +1956,14 @@ Package pdftex.def Info: images/2.png used on input line 492.
 Missing character: There is no ; in font nullfont!
  [23
 
-] <images/lm1_cnn_2.jpg, id=302, 379.4175pt x 216.81pt>
+] <images/lm1_cnn_2.jpg, id=301, 379.4175pt x 216.81pt>
 File: images/lm1_cnn_2.jpg Graphic file (type jpg)
 
 <use images/lm1_cnn_2.jpg>
 Package pdftex.def Info: images/lm1_cnn_2.jpg used on input line 530.
 (pdftex.def)             Requested size: 151.7643pt x 86.72246pt.
 
-<images/lm1_finetuning_2.jpg, id=303, 414.79968pt x 218.33147pt>
+<images/lm1_finetuning_2.jpg, id=302, 414.79968pt x 218.33147pt>
 File: images/lm1_finetuning_2.jpg Graphic file (type jpg)
 
 <use images/lm1_finetuning_2.jpg>
@@ -1987,14 +1987,14 @@ Missing character: There is no ; in font nullfont!
  [24
 
  <./images/lm1_cnn_2.jpg> <./images/lm1_finetuning_2.jpg>] <images/lm6_cnn_2.jp
-g, id=312, 382.65063pt x 225.84375pt>
+g, id=311, 382.65063pt x 225.84375pt>
 File: images/lm6_cnn_2.jpg Graphic file (type jpg)
 
 <use images/lm6_cnn_2.jpg>
 Package pdftex.def Info: images/lm6_cnn_2.jpg used on input line 530.
 (pdftex.def)             Requested size: 153.05753pt x 90.33589pt.
 
-<images/lm6_finetuning_2.jpg, id=313, 407.27156pt x 234.30695pt>
+<images/lm6_finetuning_2.jpg, id=312, 407.27156pt x 234.30695pt>
 File: images/lm6_finetuning_2.jpg Graphic file (type jpg)
 
 <use images/lm6_finetuning_2.jpg>
@@ -2070,7 +2070,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 562.
  ) 
 Here is how much of TeX's memory you used:
  22477 strings out of 493029
- 433992 string characters out of 6136235
+ 433992 string characters out of 6136234
  513941 words of memory out of 5000000
  25367 multiletter control sequences out of 15000+600000
  76851 words of font info for 101 fonts, out of 8000000 for 9000
@@ -2090,9 +2090,9 @@ lic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm100
 xlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (28 pages, 5160657 bytes).
+Output written on main.pdf (28 pages, 5118711 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
+ 405 PDF objects out of 1000 (max. 8388607)
  308 compressed objects within 4 object streams
  72 named destinations out of 1000 (max. 500000)
  272 words of extra memory for PDF output out of 10000 (max. 10000000)
