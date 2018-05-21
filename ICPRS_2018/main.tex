@@ -196,7 +196,7 @@
 \subsection{Deep learning}
 %-------------------------------------------------------
 \begin{frame}{Deep learning}{}
-	\only<1-2>{
+
 	\begin{block}{Definition\footnotemark[1]}
 		\begin{itemize}
 			\item A class of machine learning methods.
@@ -204,8 +204,7 @@
 			\item Learn multiple levels of representation in supervised or unsupervised mode.
 		\end{itemize}
 	\end{block}{\footnotetext[1]{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, “Deep learning,” Nature, vol. 521, no. 7553, pp. 436–444, 2015}}}
-	}
-	\only<2>{
+	\pause
 	\begin{block}{Applications}
 		\begin{itemize}
 			\item Computer vision (image recognition and classification)
@@ -213,7 +212,7 @@
 			\item Question answering, language translation, \ldots
 		\end{itemize}
 	\end{block}
-	}
+	
 \end{frame}
 %-------------------------------------------------------
 \subsection{Convolutional neural networks (CNNs)}
@@ -336,7 +335,7 @@ and applications in vision", 2010.
   \begin{center}
      \begin{figure}[htbp]
         \centering
-        \includegraphics[scale=.25]{images/data_aug}
+        \includegraphics[scale=1]{images/data_aug.png}
        	%\caption{\footnotesize{Pronotum}}
     	\label{figrsexample1}
 	\end{figure}
@@ -354,12 +353,12 @@ and applications in vision", 2010.
 		\item Apply the cross-validation to select training data
 		\item Training parameters: momentum ($0.9 \rightarrow 0.9999$), learning rate ($0.03 \rightarrow 0.00001$), $5000$ epochs\footnotemark
 		\item Image shows training and validation losses of the model
-		\item Training time: 3 hours using NVIDIA TITAN X card
+		\item Implemented by using Lasagne library. Training time: 3 hours using NVIDIA TITAN X card
 	\end{itemize}
 	\begin{center}
      \begin{figure}[htbp]
         \centering
-        \includegraphics[scale=.30]{images/loss_model_3}
+        \includegraphics[scale=.25]{images/loss_model_3}
        	%\caption{\footnotesize{Pronotum}}
     	\label{figrsexample1}
 	\end{figure}
