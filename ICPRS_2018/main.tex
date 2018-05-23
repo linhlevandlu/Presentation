@@ -130,21 +130,21 @@
     			\begin{subfigure}[t]{0.3\textwidth}
         			\centering
         			\includegraphics[scale=.2]{images/elytre2}
-        			\caption*{\footnotesize{Body part/elytre}}
+        			\caption*{\footnotesize{Body part/elytra}}
         			\label{figsub22}
     			\end{subfigure}
     			~ 
     			\begin{subfigure}[t]{0.3\textwidth}
         			\centering
         			\includegraphics[scale=.2]{images/tete2}
-        			\caption*{\footnotesize{Head part/tete}}
+        			\caption*{\footnotesize{Head part}}
         			\label{figsub22}
     			\end{subfigure}
     			~ 
     			\begin{subfigure}[t]{0.33\textwidth}
         			\centering
         			\includegraphics[scale=1.1]{images/pronotum}
-        			\caption*{\footnotesize{Pronotum part}}
+        			\caption*{\footnotesize{Pronotum part/thorax}}
         			\label{figsub22}
     			\end{subfigure}
 			\end{figure}
@@ -195,16 +195,16 @@
 \section{Deep learning and Convolutional Neural Networks}
 \subsection{Deep learning}
 %-------------------------------------------------------
-\begin{frame}{Deep learning}{}
+\begin{frame}{Deep learning and CNNs}{}
 
-	\begin{block}{Definition\footnotemark[1]}
+	\begin{block}{Deep learning\footnotemark[1]}
 		\begin{itemize}
 			\item A class of machine learning methods.
 			\item Use a cascade of multiple layers for feature extraction and transformation.
 			\item Learn multiple levels of representation in supervised or unsupervised mode.
 		\end{itemize}
 	\end{block}{\footnotetext[1]{\tiny{Y. LeCun, Y. Bengio, and G. Hinton, “Deep learning,” Nature, vol. 521, no. 7553, pp. 436–444, 2015}}}
-	\pause
+
 	\begin{block}{Applications}
 		\begin{itemize}
 			\item Computer vision (image recognition and classification)
@@ -217,12 +217,14 @@
 %-------------------------------------------------------
 \subsection{Convolutional neural networks (CNNs)}
 %-------------------------------------------------------
-\begin{frame}{Convolutional neural networks}
+\begin{frame}{Deep learning and CNNs}
+	\begin{block}{Convolutional neural networks}
 	\begin{itemize}
-		\item Consists an input, an output and multiple hidden layers\footnotemark[1]
+		\item Consists of an input, an output and multiple hidden layers\footnotemark[1]
 		\item Arranges the data in $3$ dimensions: \textit{width, height and depth}
 		\item Classical layers: \textbf{\color{conv}convolutional} layers, \textbf{\color{pool}pooling} layers, \textbf{\color{drop}dropout} layers, \textbf{\color{blue}full-connected} layers, \ldots
 	\end{itemize}
+		\end{block}
 	\begin{figure}[htbp]
   		\centering
    	 	\includegraphics[scale=.27]{images/arch_cnn1}
@@ -241,12 +243,13 @@ and applications in vision", 2010.
 %-------------------------------------------------------
 %-------------------------------------------------------
 \begin{frame}{First architecture}{}
-	The first applied networks:
+	\begin{block}{The first applied networks:}
 	\begin{itemize}
 		\item Repeat the pair of {\color{conv}convolutional} and {\color{pool}maximum pooling} layers
 		\item Trying to adjust the parameters of the layers
-	\end{itemize}
-	\begin{center}
+	\end{itemize}	
+   	\end{block}
+   	\begin{center}
    		\begin{figure}[htbp]
    			\centering
     		\includegraphics[scale=.28]{images/arch_cnn2}    
@@ -378,7 +381,6 @@ and applications in vision", 2010.
 					Proposed architecture & $\textbf{0.9952}$ & $\textbf{0.9951}$ & $\textbf{0.9974}$ \\ \hline
 				\end{tabular}
 			\end{table}~\\
-	\pause
 	\item Display the landmarks on the images:
 	\begin{figure}[htbp]
    				\begin{subfigure}[t]{0.5\textwidth}
@@ -537,7 +539,7 @@ and applications in vision", 2010.
 				\item Propose a new CNN architecture with elementary blocks to predict the landmarks on pronotum images.
 				\item Propose a new procedure to augment the dataset.
 				\item Apply fine-tuning to improve the quality of predicted landmarks.
-				\item[\textcolor{citem}{$\bullet$}] The predicted landmarks able to replace the manual landmarks without segmentation step.
+				\item[\textcolor{citem}{$\bullet$}] The predicted landmarks are abled to replace the manual landmarks without segmentation step.
 			\end{itemize}
 		}
 	\end{block}
