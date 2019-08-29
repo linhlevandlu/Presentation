@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.17)  28 AUG 2019 09:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.17)  29 AUG 2019 08:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1474,12 +1474,6 @@ File: images/project-famlab2.png Graphic file (type png)
 <use images/project-famlab2.png>
 Package pdftex.def Info: images/project-famlab2.png  used on input line 132.
 (pdftex.def)             Requested size: 67.14136pt x 42.82535pt.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 132.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 132.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 132.
 <images/morphoboid.pdf, id=62, 794.97pt x 614.295pt>
 File: images/morphoboid.pdf Graphic file (type pdf)
 <use images/morphoboid.pdf>
@@ -1533,6 +1527,10 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 138.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 138.
 <images/1.pdf, id=82, 1226.5825pt x 812.03375pt>
 File: images/1.pdf Graphic file (type pdf)
 <use images/1.pdf>
@@ -2000,9 +1998,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 630.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 630.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 630.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1C6529F8FF21C4D7A0CDF8362AED7597;643.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: E761604B9315423D23B1BFB284D21A55;653
+(rerunfilecheck)             After:  1C6529F8FF21C4D7A0CDF8362AED7597;643.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2029,7 +2033,7 @@ blic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm10
 exlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (26 pages, 5567497 bytes).
+Output written on main.pdf (26 pages, 5567359 bytes).
 PDF statistics:
  396 PDF objects out of 1000 (max. 8388607)
  293 compressed objects within 3 object streams
